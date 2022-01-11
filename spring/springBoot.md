@@ -8,3 +8,18 @@ Spring Framework 토대로 애플리케이션을 개발할 때 가속화 하기 
 +  매우 간편한 종속성 설정, 자동 수행 -> Spring Initializr 에서 매우 간편하게 프로젝트 생성이 가능하다.
 
 >Spring initializr: [https://start.spring.io](https://start.spring.io/)
+
+## 내가 자주사용하는 Dependencies
++ Spring Boot DevTools
+
++ Lombok
+
++ Spring Web
+
++ Thymeleaf
+
++ Spring Security
+
++ [Spring data JPA](springData/springDataJPA.md)
+Spring Data 및 Hibernate 그리고 Java Persistence API를 사용하여 SQL 저장소의 데이터 유지 목적
++ Validation
