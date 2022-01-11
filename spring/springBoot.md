@@ -20,6 +20,6 @@ Spring Framework 토대로 애플리케이션을 개발할 때 가속화 하기 
 
 + Spring Security
 
-+ [Spring data JPA](springData/springDataJPA.md)
++ [Spring data JPA](springData/springDataJPA.md) <br>
 Spring Data 및 Hibernate 그리고 Java Persistence API를 사용하여 SQL 저장소의 데이터 유지 목적
 + Validation
