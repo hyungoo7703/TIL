@@ -6,11 +6,13 @@ Today I Learned <br>
 + 2022
 	+ [1월](wdis/22-01.md)
 
-## Frontend
-## Backend
+## Spring
 + Spring
 	+ [Spring Boot](spring/springBoot.md)
 	+ Spring Data
 		+ [Spring Data JPA](spring/springData/springDataJPA.md)
+
++ With Spring
+
 ## Git
 + [Git 명령어 정리](git/git.md)
