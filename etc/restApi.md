@@ -35,11 +35,12 @@ REST는 일관적인 인터페이스로 분리되어야 한다
 6. 자체 표현 구조
 REST API의 메시지만 보고도 이를 쉽게 이해할 수 있는 자체 표현 구조로 되어있다.
 
-※ Stateful 과 Stateless 차이 <br>
-- Stateful 상태유지 (이전 상태를 보존) <br>
-- Stateless 무상태 <br>
--> 즉 무상태 프로토콜이란? <br>
-서버가 클라이언트의 상태를 보존X <br>
+<br>
+&nbsp;&nbsp;※&nbsp; Stateful 과 Stateless 차이 <br><br>
+
++ Stateful 상태유지 (이전 상태를 보존) <br>
++ Stateless 무상태 <br>
+즉 무상태 프로토콜이란? 서버가 클라이언트의 상태를 보존X <br>
 장점: 서버 확장성 높음(스케일 아웃) <br>
 단점: 클라이언트가 추가 데이터 전송
 
