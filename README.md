@@ -2,7 +2,7 @@
 Today I Learned <br>
 모든 내용을 다 정리 할 수 없으니, 내가 잘 사용 할 수 있도록 이해 및 정리
 
-## Why Did I Study
+## Why Did I Study (+To Do List)
 + 2022
 	+ [1월](wdis/22-01.md)
 
