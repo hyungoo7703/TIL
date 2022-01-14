@@ -30,3 +30,17 @@ git push origin 브랜치 // 브랜치로 push
 git reset 돌아갈커밋시점 --hard // 돌아갈 시점 상태로 만들어줌 
 git push origin -f // 코드 변경 이력으로 덮어 씌어준다.
 ```
+
+4. **최근 commit 취소, commit명 변경**
+```
+git log // commit 목록 확인
+git reset --soft HEAD^ // 가장 최근의 commit을 취소하고 add 상태는 보존 (안전지향)
+
+git commit --amend // 커밋 명 변경
+```
+
+5. **불필요한 commit 합치기: rebase**
+```
+git rebase -i HEAD~개수 // 개수 만큼 합칠 커밋 지정( 지정할 pick을 정하고 합쳐질 커밋은 s로 바꿔준다. )
+git push origin -f // 강제 push
+```
