@@ -1,4 +1,4 @@
->참고: [NHN Cloud](https://meetup.toast.com/posts/92) // [wikipedia.org](https://ko.wikipedia.org/wiki/REST)
+>참고: [https://meetup.toast.com/posts/92](https://meetup.toast.com/posts/92) // [https://ko.wikipedia.org/wiki/REST](https://ko.wikipedia.org/wiki/REST)
 # REST API
 
 REST API는 소프트웨어 아키텍처의 한 형식으로 자원을 이름으로 구분하여 자원의 정보를 주고 받는 모든 것이다. <br>
