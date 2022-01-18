@@ -16,7 +16,7 @@ Today I Learned <br>
 	+ Spring Security
 
 + With Spring
-	+ [스프링 이용하여 REST 서비스 구축](withSpring/스프링-이용하여-REST-서비스-구축.me)
+	+ [스프링 이용하여 REST 서비스 구축](withSpring/스프링-이용하여-REST-서비스-구축.md)
 
 ## Git
 + [Git 명령어 정리](git/git.md)
