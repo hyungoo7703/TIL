@@ -56,7 +56,7 @@ class Example {
 
 2. Spring Data JPA 저장소를 구현 한다. 
 
-Spring Data JPA 저장소는 백엔드 데이터 저장소에 대한 레코드 생성, 읽기, 업데이트 및 삭제를 지원하는 메소드와의 인터페이스이다. <
+Spring Data JPA 저장소는 백엔드 데이터 저장소에 대한 레코드 생성, 읽기, 업데이트 및 삭제를 지원하는 메소드와의 인터페이스이다. <br>
 세부적인 내용이나 자세한 설명은 [TIL](https://github.com/hyungoo7703/TIL)에 잘 정리해 두었다.
 >[Spring Data JPA 정리 내용으로 이동](../spring/springData/springDataJPA.md) 
 
