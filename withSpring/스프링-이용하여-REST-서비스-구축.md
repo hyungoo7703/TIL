@@ -157,7 +157,8 @@ public class ExampleController {
 ## 실행하기
 
 위 과정을 다 마치고 우선 Spring Boot App을 실행하여(기본 8080포트사용) <br>
-Controller에서 설정한대로 http://localhost:8080/examples로 접속하자 H2 데이터 베이스에서 테이블이 생성되었다.
+Controller에서 설정한대로 8080포트/examples로 접속하자 H2 데이터 베이스에서 테이블이 생성되었다.
+
 ![1-18(1)](https://user-images.githubusercontent.com/93297109/149893006-70acd281-83a6-4664-b726-0d47902c3d58.png)
 
 정확한 데이터 전송이 되는지 확인하기 위해 포스트맨을 실행했고, <br>
