@@ -44,3 +44,11 @@ git commit --amend // 커밋 명 변경
 git rebase -i HEAD~개수 // 개수 만큼 합칠 커밋 지정( 지정할 pick을 정하고 합쳐질 커밋은 s로 바꿔준다. )
 git push origin -f // 강제 push
 ```
+
+6. **branch 생성 및 삭제**
+```
+git checkout -b 브랜치 // 브랜치 생성 및 접근
+git branch // 브랜치 목록
+git branch -D 브랜치 // 브랜치 제거 (로컬)
+git push origin --delete 브랜치 // 원격 저장소에 push된 브랜치 제거
+```
