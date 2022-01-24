@@ -100,7 +100,7 @@ public class ExampleController {
 	
 	/* ResponseEntity<> 없이 사용
 	 
-    @GetMapping("/examples") 
+        @GetMapping("/examples") 
 	List<Example> all() { 
 	  	return exampleRepository.findAll(); 
 	}
