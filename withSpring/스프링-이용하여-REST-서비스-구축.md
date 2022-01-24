@@ -123,7 +123,7 @@ public class ExampleController {
 	  }
 	
 
-	@ResponseStatus(HttpStatus.CREATED) // 상태코드를 ResponseStatus 어노테이션을 이용하여 전송하는 것도 가능하다.
+	@ResponseStatus(HttpStatus.CREATED) // ResponseEntity 처럼 상태코드를 전송할 수 없어 제공되는 ResponseStatus 어노테이션을 Http 상태코드를 입력
 	@PostMapping("/examples") // 새로운 Example 입력
 	Example newExample(@RequestBody Example newExample) {
 		return exampleRepository.save(newExample);
