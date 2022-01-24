@@ -125,8 +125,8 @@ public class ExampleController {
 
 	@ResponseStatus(HttpStatus.CREATED) // 상태코드를 ResponseStatus 어노테이션을 이용하여 전송하는 것도 가능하다.
 	@PostMapping("/examples") // 새로운 Example 입력
-	Example newExample(@RequestBody Example newEmployee) {
-		return exampleRepository.save(newEmployee);
+	Example newExample(@RequestBody Example newExample) {
+		return exampleRepository.save(newExample);
 	}
 
 	@GetMapping("/examples/{id}") // 아이디로 조회
