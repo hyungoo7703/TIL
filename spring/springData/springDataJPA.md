@@ -41,7 +41,9 @@ CrudRepository 인터페이스가 관리되는 엔티티 클래스에 대한 CRU
 
 또한 **JpaRepository 또는 MongoRepository**와 같은 기술별 추상화가 잘 구현되어 있다.
 
-### 쿼리 메소드 4단계 프로세스
+<br>
+
+### 쿼리 메소드 3단계 프로세스
 
 1. Repository 또는 하위 인터페이스 중 하나를 확장하는 인터페이스를 선언하고 처리해야 하는 도메인 클래스 및 ID 유형에 입력한다.
 
@@ -79,7 +81,7 @@ class SomeClient {
 
 + 메소드 이름에서 쿼리 생성
 
-첫번째 부분은 **findBy 또는 existsBy**가 되며 이는 주제를 정의한다. 그후 뒤에 오는 두번째 연결 부분은 서술어를 형성한다. <br>
+첫번째 부분은 **findBy 또는 existsBy**가 되며, 이는 주제를 정의한다. 그후 뒤에 오는 두번째 연결 부분은 서술어를 형성한다. <br>
 즉 첫번째 By가 실제 기준 서술어의 시작을 나타내는 구분 기호라 할 수 있으며 **And 및 Or**로 연결할 수 있다.
 
 ```java
@@ -109,7 +111,7 @@ class SomeClient {
 
 + 특수한 매개변수의 처리
 
-쿼리에서 매소드의 매개변수의 처리는 **Pageable(페이지 매김) 및 Sort(정렬)**와 같은 특정 유형에 대한 동적 처리도 가능하다. 
+쿼리에서 매소드의 매개변수의 처리는 **Pageable(페이지 매김) 및 Sort(정렬)** 와 같은 특정 유형에 대한 동적 처리도 가능하다. 
 
 ```java
   Page<User> findByLastname(String lastname, Pageable pageable); // 페이징 동적 추가 (Page는 사용 가능한 요소와 페이지의 총 수를 알고 있기에 제공되는 메소드와 함께 사용)
@@ -120,7 +122,7 @@ class SomeClient {
 
 + 결과를 제한하는 쿼리
 
-선택한 숫자의 값을 first 또는 top에 추가하여 반환할 최대 결과 크기를 지정 할 수 있다. (숫자 생략시 결과가 1로 가정)
+선택한 숫자의 값을 first 또는 top에 추가하여 반환할 최대 결과 크기를 지정 할 수 있다. (숫자 생략 시 결과가 1로 가정)
 
 ```java
   /*
@@ -133,7 +135,7 @@ class SomeClient {
 
 + 메소드에 Java Collection이나 lterable를 반환
 
-Streamable을 쿼리 메소드 반환 유형으로 사용(lterable 또는 모든 컬렉션 유형 대신 사용)
+Streamable을 쿼리 메소드 반환 유형으로 사용 (lterable 또는 모든 컬렉션 유형 대신 사용)
 
 ```java
   interface PersonRepository extends Repository<Person, Long> {
