@@ -48,13 +48,13 @@ import javax.persistence.PersistenceContext;
 import org.springframework.stereotype.Repository;
 
 @Repository // Spring에서 제공하는 기본타입 -> ComponentScan의 대상이 되는 어노테이션
-public class CrudRepository {
+public class ExampleRepository {
 
 	@PersistenceContext // Spring Boot (spring-boot-starter-data-jpa) 위에서 동작시 EntityManager를 스프링 컨테이너에 주입
 	private EntityManager em; // JPA 에서 Entity 관리를 위해 사용, EntityManager 생성코드는 위 @PersistenceContext로 인하여 필요가 없다.
 	
 	public void save(Example example) { 
-		em.persist(example); // 공부 필요 내용
+		em.persist(example);
 	}
 }
 ```
