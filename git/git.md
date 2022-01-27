@@ -52,3 +52,8 @@ git branch // 브랜치 목록
 git branch -D 브랜치 // 브랜치 제거 (로컬)
 git push origin --delete 브랜치 // 원격 저장소에 push된 브랜치 제거
 ```
+
+7. **git init 취소**
+```
+rm -r .git
+```
