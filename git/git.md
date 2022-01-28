@@ -57,3 +57,20 @@ git push origin --delete 브랜치 // 원격 저장소에 push된 브랜치 제�
 ```
 rm -r .git
 ```
+
+8. **Pull requests, Merge requests 과정** <br>
+
+결론: main 브랜치를 카피해서 병합 후 덮어 씌어주기 
+```
+git checkout main // main브랜치를 지웟다가 다시 하는걸 권장 -> 최신화를 위해
+git pull origin main // 메인 브랜치 최신화
+git branch copy // 메인 브랜치 카피 -> copy 브랜치를 생성
+git checkout copy 
+git merge 합치고픈브랜치 --squash // 이 과정에서 충돌 있다면 수정
+git commit -am "main에 보내가고자하는 커밋 메시지" // add 및 commit -> 이때 main으로 보내고자 하는 커밋메세지를 입력해준다.
+git push origin 합치고픈브랜치 -f // copy 브랜치에서 합치고픈 브랜치에 덮어 씌어준다.
+git branch -D 합치고픈브랜치 // 예전 커밋 log가 보이기 때문에 지웟다가
+git branch 합치고픈브랜치
+git checkout 합치고픈브랜치
+```
+로그 재확인 후 main으로 보내고자 하는 커밋메세지가 있으면 완료된 것, 이후 깃헙 사이트에서 요청
