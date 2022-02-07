@@ -2,11 +2,13 @@
 
 # 스프링 이용하여 REST 서비스 구축
 
->[REST API](../etc/restApi.md)에 대한 정리는 이곳을 참고하면 된다. 
+REST API에 대한 부가적인 설명은
+[TIL](https://github.com/hyungoo7703/TIL)의 [REST API](../etc/restApi.md)를 참고하면 된다.
 
 RESTful API는 구현과 사용이 간편화 되어 웹에서 웹 서비스를 구축하기 위한 표준처럼 사용되고 있다. <br>
 스프링을 이용하면 쉽게 RESTful 서비스를 구축 할 수 있는 장점이 있다. <br>
 그 과정을 정리 해보려고 한다.
+
 
 ## 시작하기
 
@@ -57,8 +59,7 @@ class Example {
 2. Spring Data JPA 저장소를 구현 한다. 
 
 Spring Data JPA 저장소는 백엔드 데이터 저장소에 대한 레코드 생성, 읽기, 업데이트 및 삭제를 지원하는 메소드와의 인터페이스이다. <br>
-세부적인 내용이나 자세한 설명은 [TIL](https://github.com/hyungoo7703/TIL)에 잘 정리해 두었다.
->[Spring Data JPA 정리 내용으로 이동](../spring/springData/springDataJPA.md) 
+세부적인 내용이나 자세한 설명은 [TIL](https://github.com/hyungoo7703/TIL)의 [Spring Data JPA](../spring/springData/springDataJPA.md)목록에 잘 정리해 두었다.
 
 ```java
 import org.springframework.data.jpa.repository.JpaRepository;
