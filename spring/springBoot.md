@@ -18,15 +18,15 @@ Spring 에서는 Spring Initializr를 통해 프로젝트 생성 및 의존성 �
 
 ## 내가 자주사용하는 Dependencies
 
-+ Spring Boot DevTools
++ Spring Boot DevTools <br>
 빠른 애플리케이션 재시작, LiveReload 및 구성을 제공
-+ Lombok
++ Lombok <br>
 반복되는 getter, setter 등의 메소드, 생성자 등의 상용구 코드를 줄여주는 라이브러리
-+ Spring Web
++ Spring Web <br>
 Spring MVC를 사용하여 RESTful을 포함한 웹 애플리케이션을 빌드, Apache Tomcat을 기본 내장 컨테이너로 사용
 + Spring Security
 
 + [Spring data JPA](springData/springDataJPA.md) <br>
 Spring Data 및 Hibernate 그리고 Java Persistence API를 사용하여 SQL 저장소의 데이터 유지 목적
-+ Validation
++ Validation <br>
 Hibernate 유효성 검사기를 사용한 Bean 유효성 검사.
