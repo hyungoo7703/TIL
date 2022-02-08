@@ -1,4 +1,4 @@
->참고: [https://prinha.tistory.com/entry/%EC%9E%90%EB%B0%94-%EC%8A%A4%ED%94%84%EB%A7%81-%EC%96%B4%EB%85%B8%ED%85%8C%EC%9D%B4%EC%85%98-annotation%EC%9D%98-%EC%A0%95%EC%9D%98%EC%99%80-%EC%A2%85%EB%A5%98](https://prinha.tistory.com/entry/%EC%9E%90%EB%B0%94-%EC%8A%A4%ED%94%84%EB%A7%81-%EC%96%B4%EB%85%B8%ED%85%8C%EC%9D%B4%EC%85%98-annotation%EC%9D%98-%EC%A0%95%EC%9D%98%EC%99%80-%EC%A2%85%EB%A5%98)
+>참고: [자바-스프링-어노테이션-annotation의-정의와-종류](https://prinha.tistory.com/entry/%EC%9E%90%EB%B0%94-%EC%8A%A4%ED%94%84%EB%A7%81-%EC%96%B4%EB%85%B8%ED%85%8C%EC%9D%B4%EC%85%98-annotation%EC%9D%98-%EC%A0%95%EC%9D%98%EC%99%80-%EC%A2%85%EB%A5%98)
 # Validation 사용을 위해 제공되는 어노테이션 정리
 
 Validation은 Hibernate 유효성 검사기를 사용한 Bean 유효성 검사인데 Java의 데이터 유효성 검사 표준 기술이다. <br>
@@ -33,24 +33,24 @@ Validation은 Hibernate 유효성 검사기를 사용한 Bean 유효성 검사�
 
 ### String
 
-**@DecimalMax**(value = ): 지정된 최대 값보다 작거나 같아야 한다.
-**@DecimalMin**(value = ): 지정된 최소 값보다 크거나 같아야 한다.
+- **@DecimalMax**(value = ): 지정된 최대 값보다 작거나 같아야 한다.
+- **@DecimalMin**(value = ): 지정된 최소 값보다 크거나 같아야 한다.
 
 ### int
 
-**@Max**: 지정된 최대 값보다 작거나 같아야 한다.
-**@Min**: 지정된 최소 값보다 크거나 같아야 한다.
-**@Positive**: 양수
-**@PositiveOrZero**: 0이거나 양수
-**@Negative**: 음수
-**@NegativeOrZero**: 0이거나 음수
+- **@Max**: 지정된 최대 값보다 작거나 같아야 한다.
+- **@Min**: 지정된 최소 값보다 크거나 같아야 한다.
+- **@Positive**: 양수
+- **@PositiveOrZero**: 0이거나 양수
+- **@Negative**: 음수
+- **@NegativeOrZero**: 0이거나 음수
 
 ## 시간 값에 대한 검증
      
-**@Future**: Now 보다 미래의 날짜, 시간
-**@FutureOrPresent**: Now 거나 미래의 날짜, 시간
-**@Past**: Now 보다 과거의 날짜, 시간
-**@PastOrPresent**: Now 거나 과거의 날짜, 시간
+- **@Future**: Now 보다 미래의 날짜, 시간
+- **@FutureOrPresent**: Now 거나 미래의 날짜, 시간
+- **@Past**: Now 보다 과거의 날짜, 시간
+- **@PastOrPresent**: Now 거나 과거의 날짜, 시간
 
 ## 이메일 검증
 
@@ -62,8 +62,8 @@ Validation은 Hibernate 유효성 검사기를 사용한 Bean 유효성 검사�
 
 ## 논리 검증
 
-**@AssertTrue**: 항상 True 여부
-**@AssertFalse**: 항상 False 여부
+- **@AssertTrue**: 항상 True 여부
+- **@AssertFalse**: 항상 False 여부
 
 ## 크기(길이) 검증
 
