@@ -1,4 +1,4 @@
->참고: [자바-스프링-어노테이션-annotation의-정의와-종류](https://prinha.tistory.com/entry/%EC%9E%90%EB%B0%94-%EC%8A%A4%ED%94%84%EB%A7%81-%EC%96%B4%EB%85%B8%ED%85%8C%EC%9D%B4%EC%85%98-annotation%EC%9D%98-%EC%A0%95%EC%9D%98%EC%99%80-%EC%A2%85%EB%A5%98)
+>참고: [https://prinha.tistory.com/entry/자바-스프링-어노테이션-annotation의-정의와-종류](https://prinha.tistory.com/entry/%EC%9E%90%EB%B0%94-%EC%8A%A4%ED%94%84%EB%A7%81-%EC%96%B4%EB%85%B8%ED%85%8C%EC%9D%B4%EC%85%98-annotation%EC%9D%98-%EC%A0%95%EC%9D%98%EC%99%80-%EC%A2%85%EB%A5%98)
 # Validation 사용을 위해 제공되는 어노테이션 정리
 
 Validation은 Hibernate 유효성 검사기를 사용한 Bean 유효성 검사인데 Java의 데이터 유효성 검사 표준 기술이다. <br>
