@@ -49,6 +49,8 @@ INSERT INTO example(name) values ('name5');
 
 0. application.properties 설정
 
+원래 연결 하듯이 진행 해도 되지만
+
 ```
 # H2 DataBase 연결 설정
 spring.datasource.url=jdbc:h2:tcp://localhost/~/test
@@ -60,6 +62,7 @@ spring.datasource.driver-class-name=org.h2.Driver
 아래와 같이 Datasource의 이름을 정할 수도 있다. 
 
 ```
+# H2 DataBase 연결 설정
 spring.datasource.name=jdbcdb
 spring.datasource.generate-unique-name=false
 ```
