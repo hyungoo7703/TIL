@@ -9,7 +9,9 @@ Spring Data JDBC 학습에 앞서, JDBC Template을 활용한 CRUD 기능을 복
 ## 시작하기
 
 기본적으로 Spring Boot 사용 기반에 
+
 >Spring initializr: [https://start.spring.io](https://start.spring.io/)
+
 에서 프로젝트 종속성을 가지고 시작한다. **추가 종속성: (Spring Web, Spring Data JDBC, H2 Database)** <br>
 여기서 Spring Data JDBC는 사용하지 않지만, 의존성 추가의 이유는 바로 아래에서 확인할 수 있다.
 
