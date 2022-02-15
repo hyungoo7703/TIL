@@ -182,7 +182,8 @@ public class ExampleJdbcRepository {
 
 ## 실행하기
 
-간단한 테스트를 위해 SpringApplication에 System.out.println로 출력 해 보았다. (좋은 방법은 아님)
+간단한 테스트를 위해 SpringApplication에 System.out.println로 출력 해 보았다. (좋은 방법은 아님) <br>
+list 메소드만 테스트 해보았다.
 
 ```java
 @SpringBootApplication
@@ -209,4 +210,4 @@ public class DemoApplication {
 
 ![2-15(4)](https://user-images.githubusercontent.com/93297109/153998313-ff6bbbe1-8816-4096-9ac7-8d35f3e7a6d3.png)
 
-위와 같이 data.sql에 추가한 데이터들이 정상 출력됨을 확인할 수 있다. (나머지 생략)
+위와 같이 data.sql에 추가한 데이터들이 정상 출력됨을 확인할 수 있다.
