@@ -74,3 +74,9 @@ git branch 합치고픈브랜치
 git checkout 합치고픈브랜치
 ```
 로그 재확인 후 main으로 보내고자 하는 커밋메세지가 있으면 완료된 것, 이후 깃헙 사이트에서 요청
+
+9. **원격 저장소 branch 삭제**
+
+```
+git push origin --delete 브랜치
+```
