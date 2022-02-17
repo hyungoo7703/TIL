@@ -17,11 +17,11 @@ Spring Data JDBC 학습에 앞서, JDBC Template을 활용한 CRUD 기능을 복
 
 ##  인메모리 DB(ex H2) Schema 및 Data 초기 설정하기
 
-Spring Data JDBC가 종속성으로 추가된 Spring Boot 환경에서는 Resources 폴더 아래 
+Spring Data JDBC와 같이, Spring Data기반 종속성이 추가된 Spring Boot 환경에서는 Resources 폴더 아래 
 
 ![2-15(1)](https://user-images.githubusercontent.com/93297109/153990587-79a695fb-2a18-4369-b0d0-060c6e807ce7.png)
 
-그림과 같이 data.sql, schema.sql 파일의 추가로 SQL문 스크립트 실행이 가능하다. <br>
+그림과 같이 data.sql, schema.sql 파일의 추가로 SQL문 스크립트 실행이 가능하다. (인메모리 DB 한정) <br>
 
 ```sql
 -- schema.sql 추가
@@ -49,26 +49,17 @@ INSERT INTO example(name) values ('name5');
 
 0. application.properties 설정
 
-원래 연결 하듯이 진행 해도 되지만
+Schema 및 Data 초기 설정을 위해 그 동안과는 조금 다르게 설정 하였다.
 
 ```
-# H2 DataBase 연결 설정
-spring.datasource.url=jdbc:h2:tcp://localhost/~/test
-spring.datasource.username=sa
-spring.datasource.password=
-spring.datasource.driver-class-name=org.h2.Driver
-```
-
-아래와 같이 Datasource의 이름을 정할 수도 있다. 
-
-```
-# H2 DataBase 연결 설정
 spring.datasource.name=jdbcdb
 spring.datasource.generate-unique-name=false
+spring.h2.console.enabled=true
 ```
 
-만약 Datasource 이름을 정하고 설정 했을 경우 (나의 경우 jdbcdb) <br>
-Spring Boot Application 실행 시,
+Datasource 이름을 정하고 (나의 경우 jdbcdb) <br>
+localhost:8080/h2-console 으로서의 console 접근을 허용 설정을 한다. <br>
+그 후 Spring Boot Application 실행 시,
 
 ![2-15(2)](https://user-images.githubusercontent.com/93297109/153990830-7988213c-9a57-4514-bb2b-4639c59f8563.png)
 
