@@ -11,9 +11,9 @@
 ## Spring
 + Spring
 	+ [Spring Boot](spring/springBoot.md)
-	+ [Spring Data]()
+	+ [Spring Data](spring/springData.md)
 		+ [Spring Data JPA](spring/springData/springDataJPA.md)
-		+ [Spring Data JDBC]()
+		+ [Spring Data JDBC](spring/springData/springDataJdbc.md)
 
 + With Spring
 	+ [스프링 이용하여 REST 서비스 구축](withSpring/스프링-이용하여-REST-서비스-구축.md)
