@@ -7,4 +7,4 @@ Spring Data JPA는 Spring 에서 제공하는 서브 프로젝트로 JPA 기반 
 
 >Spring initializr: [https://start.spring.io](https://start.spring.io/)
 
-start.spring.io에서 Spring Boot 기반으로 프로젝트 설정시 의존관계에 Spring Data JPA를 추가하면 된다.
+우리는 위 start.spring.io에서 Spring Boot 기반으로 프로젝트 설정시 의존관계에 Spring Data JPA를 추가하면 된다.

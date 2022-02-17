@@ -7,4 +7,4 @@ Spring Data Jdbc
 
 >Spring initializr: [https://start.spring.io](https://start.spring.io/)
 
-start.spring.io에서 Spring Boot 기반으로 프로젝트 설정시 의존관계에 Spring Data Jdbc를 추가하면 된다.
+우리는 위 start.spring.io에서 Spring Boot 기반으로 프로젝트 설정시 의존관계에 Spring Data Jdbc를 추가하면 된다.

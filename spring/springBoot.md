@@ -24,8 +24,8 @@ Spring 에서는 Spring Initializr를 통해 프로젝트 생성 및 의존성 �
 반복되는 getter, setter 등의 메소드, 생성자 등의 상용구 코드를 줄여주는 라이브러리
 + Spring Web <br>
 Spring MVC를 사용하여 RESTful을 포함한 웹 애플리케이션을 빌드, Apache Tomcat을 기본 내장 컨테이너로 사용
-+ Spring Security
-
++ Spring Security <br>
+Spring 애플리케이션을 위한 사용자 정의 가능한 인증 및 액세스 제어 프레임워크
 + [Spring data JPA](springData/springDataJPA.md) <br>
 Spring Data 및 Hibernate 그리고 Java Persistence API를 사용하여 SQL 저장소의 데이터 유지 목적
 + Validation <br>

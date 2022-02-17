@@ -9,10 +9,37 @@
 + 제공되는 메소드를 통해 조작하며 적합한 쿼리를 자동으로 등록해준다.
 + 페이지 매김 지원, 동적 쿼리 실행, 맞춤형 데이터 액세스 코드 통합 기능 등 다양한 기능 지원이 된다.
 
+## Spring Boot 환경에서 Spring Data 사용하는 방법
+
+Spring Data 관련된 프로젝트 들은 <br>
+Spring Module을 뒷받침하는 핵심 개념 Spring Data Commons에 더해 <br>
+JPA, MongoDB 같은 기술들을 결합하여 **JpaRepository, MongoRepository**와 같이 기술 별 추상화가 잘 구현되어 있다. <br>
+
+> Spring initializr: [https://start.spring.io](https://start.spring.io/)  
+
+우리는 위 start.spring.io에서 Spring Boot 기반으로 프로젝트 설정시 Spring Data와 관련된 종속성을 부여할 때 <br>
+사용 할 기술의 Spring Data 모듈에 대한 의존성을 추가하면 된다. (ex: Spring Data JPA, Spring Data MongoDB) <br>
+
+이미 생성된 프로젝트에 의존성을 부여 할 경우에는 <br>
+Maven 프로젝트에 Spring Data JPA를 추가할 경우, pom.xml에 아래 코드를 추가해주면 된다.
+
+```xml
+<dependencies>
+  <dependency>
+    <groupId>org.springframework.data</groupId>
+    <artifactId>spring-data-jpa</artifactId>
+  </dependency>
+<dependencies>
+```
+
+하위 프로젝트에 대한 정리는 이곳을 참고하면 된다. 
+
++ [Spring Data JPA](springData/springDataJPA.md)
++ [Spring Data JDBC](springData/springDataJDBC.md)
+
 ## 핵심 개념
 
-핵심 개념을 먼저 표현 하면 <br>
-**CrudRepository 인터페이스가 관리되는 엔티티 클래스에 대한 CRUD 기능이 제공되는 것이다.** <br>
+**핵심은 CrudRepository 인터페이스가 관리되는 엔티티 클래스에 대한 CRUD 기능이 제공되는 것이다.** <br>
 
 Spring Data 저장소 추상화의 목표는 다양한 영속성 저장소에 대한 데이터 액세스 계층을 구현 시 필요한 코드의 양을 크게 줄이는 것이다. <br>
 추상화의 중심 인터페이스는 Repository 이다. 관리할 도메인 클래스와 그 클래스의 ID 유형을 유형 인수로 사용한다.
@@ -51,25 +78,3 @@ PagingAndSortingRepository<User, Long> repository = // 빈 접근
 Page<User> users = repository.findAll(PageRequest.of(1, 20)); // 페이지 시작은 0 부터
 ```
 
-## Spring Boot 환경에서 Spring Data 사용하는 방법
-
->Spring initializr: [https://start.spring.io](https://start.spring.io/)  
-
-start.spring.io에서 Spring Boot 기반으로 프로젝트 설정시 Spring Data와 관련된 종속성을 부여할 때 <br>
-결론적으로 말하면 하위 프로젝트의 의존성을 추가하면 된다. (ex: Spring Data JPA, Spring Data MongoDB) <br>
-
-Spring Data 프로젝트는 <br>
-Spring Data Commons(모든 Spring Module을 뒷받침하는 핵심 Spring 개념)를 기반으로 JPA, MongoDB 같은 기술들을 결합하여 표현한 <br>
-**JpaRepository 또는 MongoRepository** 같은 기술별 추상화가 잘 구현되어 있다. <br>
-그렇기에 사용 할 기술의 Spring Data 모듈에 대한 의존성을 추가하면 된다. <br>
-
-예를 들어, Maven 프로젝트에 Spring Data JPA를 추가할 경우 pom.xml에 아래 코드를 추가해주면 된다.
-
-```xml
-<dependencies>
-  <dependency>
-    <groupId>org.springframework.data</groupId>
-    <artifactId>spring-data-jpa</artifactId>
-  </dependency>
-<dependencies>
-```
