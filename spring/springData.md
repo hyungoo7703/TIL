@@ -21,29 +21,10 @@ public interface CrudRepository<T, ID> extends Repository<T, ID> { // ID는 타�
 
 }
 ```
-
-**CrudRepository 인터페이스가 관리되는 엔티티 클래스에 대한 CRUD 기능이 제공되는 것이 핵심**이다. <br>
 우리는 사용 시 재정의하여 사용하거나, 주어진 대로 이용하는 것도 가능하다. <br>
 
-또한 **JpaRepository 또는 MongoRepository**와 같이 기술별 추상화가 잘 구현되어 있다. <br>
-그렇기에 Spring Boot에 Spring Data와 관련된 종속성을 부여할 때는 <br>
-Spring Data JPA, Spring Data MongoDB, Spring Data Jdbc 처럼 <br>
-Spring Data 모듈에 대한 의존성을 추가해 사용 할 기술을 정하면 된다. <br>
-
-예를 들어, Maven 프로젝트에 Spring Data JPA를 추가할 경우 pom.xml에 아래 코드를 추가해주면 된다.
-
-```xml
-<dependencies>
-  <dependency>
-    <groupId>org.springframework.data</groupId>
-    <artifactId>spring-data-jpa</artifactId>
-  </dependency>
-<dependencies>
-```
-
------
-위 핵심 개념에 추가적으로, <br> 
-PagingAndSortingRepository 추상화가 있으며 엔티티에 대한 페이지 매김 액세스를 쉽게 하기 위한 메소드를 제공한다.
+여기에서 살짝 더 알아보면, <br>
+PagingAndSortingRepository 인터페이스도 있으며 엔티티에 대한 페이지 매김 액세스를 쉽게 하기 위한 메소드를 제공한다.
 
 ```java
 public interface PagingAndSortingRepository<T, ID> extends CrudRepository<T, ID> {
@@ -60,7 +41,29 @@ PagingAndSortingRepository<User, Long> repository = // 빈 접근
 Page<User> users = repository.findAll(PageRequest.of(1, 20)); // 페이지 시작은 0 부터
 ```
 
-<br>
+이 기능 외에도 다양한 기능들을 제공해주는데 가장 핵심은, <br>
+**CrudRepository 인터페이스가 관리되는 엔티티 클래스에 대한 CRUD 기능이 제공되는 것이다.** <br>
+
+Spring Data Commons를 기반으로 JPA, MongoDB 같은 기술들을 결합하여 표현한 <br>
+**JpaRepository 또는 MongoRepository** 같은 기술별 추상화가 잘 구현되어 있다. <br>
+
+그렇기에 Spring Boot에 Spring Data와 관련된 종속성을 부여할 때는 <br>
+Spring Data JPA, Spring Data MongoDB, Spring Data Jdbc 처럼 <br>
+Spring Data 모듈에 대한 의존성을 추가해 사용 할 기술을 정하면 된다. <br>
+
+예를 들어, Maven 프로젝트에 Spring Data JPA를 추가할 경우 pom.xml에 아래 코드를 추가해주면 된다.
+
+```xml
+<dependencies>
+  <dependency>
+    <groupId>org.springframework.data</groupId>
+    <artifactId>spring-data-jpa</artifactId>
+  </dependency>
+<dependencies>
+```
+
+-----
+## 좀 더 자세한 내용
 
 ### 쿼리 메소드 3단계 프로세스
 
