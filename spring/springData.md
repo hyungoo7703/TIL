@@ -22,7 +22,7 @@ public interface CrudRepository<T, ID> extends Repository<T, ID> { // ID는 타�
 }
 ```
 
-CrudRepository 인터페이스가 관리되는 엔티티 클래스에 대한 CRUD 기능이 제공되는 것이 핵심이다. <br>
+**CrudRepository 인터페이스가 관리되는 엔티티 클래스에 대한 CRUD 기능이 제공되는 것이 핵심**이다. <br>
 우리는 사용 시 재정의하여 사용하거나, 주어진 대로 이용하는 것도 가능하다. <br>
 
 또한 **JpaRepository 또는 MongoRepository**와 같이 기술별 추상화가 잘 구현되어 있다. <br>
@@ -30,8 +30,9 @@ CrudRepository 인터페이스가 관리되는 엔티티 클래스에 대한 CRU
 Spring Data JPA, Spring Data MongoDB, Spring Data Jdbc 처럼 <br>
 Spring Data 모듈에 대한 의존성을 추가해 사용 할 기술을 정하면 된다. <br>
 
+예를 들어, Maven 프로젝트에 Spring Data JPA를 추가할 경우 pom.xml에 아래 코드를 추가해주면 된다.
+
 ```xml
-<!--Spring Data JPA 의존성 추가 예시 -->
 <dependencies>
   <dependency>
     <groupId>org.springframework.data</groupId>
