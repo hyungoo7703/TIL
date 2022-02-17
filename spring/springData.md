@@ -20,8 +20,8 @@ JPA, MongoDB 같은 기술들을 결합하여 **JpaRepository, MongoRepository**
 우리는 위 start.spring.io에서 Spring Boot 기반으로 프로젝트 설정시 Spring Data와 관련된 종속성을 부여할 때 <br>
 사용 할 기술의 Spring Data 모듈에 대한 의존성을 추가하면 된다. (ex: Spring Data JPA, Spring Data MongoDB) <br>
 
-이미 생성된 프로젝트에 의존성을 부여 할 경우에는 <br>
-Maven 프로젝트에 Spring Data JPA를 추가할 경우, pom.xml에 아래 코드를 추가해주면 된다.
+이미 생성된 프로젝트에 의존성을 부여 할 경우에는 (ex: Maven 프로젝트에 Spring Data JPA를 추가할 경우) <br>
+pom.xml에 아래 코드를 추가해주면 된다.
 
 ```xml
 <dependencies>
