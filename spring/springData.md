@@ -41,6 +41,7 @@ Spring Data 모듈에 대한 의존성을 추가해 사용 할 기술을 정하�
 <dependencies>
 ```
 
+-----
 위 핵심 개념에 추가적으로, <br> 
 PagingAndSortingRepository 추상화가 있으며 엔티티에 대한 페이지 매김 액세스를 쉽게 하기 위한 메소드를 제공한다.
 
