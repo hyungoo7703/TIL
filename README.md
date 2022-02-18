@@ -1,10 +1,6 @@
 # TIL (Today I Learned)
 모든 내용을 다 정리 할 수 없으니, 내가 잘 사용 할 수 있도록 이해 및 정리
 
-## Why Did I Study (+To Do List)
-+ 2022
-	+ [상반기](wdis/22-01~06.md)
-
 ## Vue
 + [Vue 프로젝트 생성 및 구조](vue/vue-프로젝트-생성-및-구조.md)
 
