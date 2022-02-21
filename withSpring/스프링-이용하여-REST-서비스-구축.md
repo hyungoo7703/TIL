@@ -12,9 +12,8 @@ RESTful API는 구현과 사용이 간편화 되어 웹에서 웹 서비스를 �
 
 ## 시작하기
 
-기본적으로 Spring Boot 사용 기반에 
->Spring initializr: [https://start.spring.io](https://start.spring.io/)
-에서 프로젝트 종속성을 가지고 시작한다. **추가 종속성: (Spring Web, Spring Data JPA, H2 Database)**
+기본적으로 Spring Boot 사용 기반에 <br>
+**추가 종속성: (Spring Web, Spring Data JPA, H2 Database)** 을 가지고 시작한다.
 
 -----
 
