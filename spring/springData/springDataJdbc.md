@@ -66,7 +66,7 @@ Page<User> users = UserRepository.findAll(PageRequest.of(1, 20)); // Spring Data
 
 ### 쿼리 메소드 3단계 프로세스 (기본 데이터에 대하여 쿼리 선언 가능)
 
-**가정**: Person 는 Long으로 ID값을 가지고 firstname과 lastname을 가지고 있다고 할 때,
+**가정**: Person은 Long으로 ID값을 가지고 firstname과 lastname을 가지고 있다고 할 때,
 
 1. 확장하는 인터페이스를 선언하고 처리해야 하는 도메인 클래스 및 ID 유형에 입력한다.
 
