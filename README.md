@@ -21,7 +21,7 @@
 ## ETC
 + For Spring
 	+ [JDBC Template CRUD (Feat: 인메모리 DB, Schema 및 Data 초기설정)](etc/JDBC-Template-CRUD(Feat-인메모리-DB-Schema-및-Data-초기설정).md)
-	+ [JPA(Java Persistence API)]()
+	+ [JPA(Java Persistence API)](etc/JPA.md)
 
 + [REST API](etc/restApi.md)
 + [정규표현식(Regular Expression)](etc/patternMatching.md)
