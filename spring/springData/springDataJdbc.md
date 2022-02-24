@@ -1,4 +1,4 @@
-> 참고: [https://docs.spring.io/spring-data/jdbc/docs](https://docs.spring.io/spring-data/jdbc/docs/current/reference/html/#reference) // [https://www.baeldung.com/spring-data-jdbc-intro] (https://www.baeldung.com/spring-data-jdbc-intro)
+> 참고: [https://docs.spring.io/spring-data/jdbc/docs](https://docs.spring.io/spring-data/jdbc/docs/current/reference/html/#reference) // [https://www.baeldung.com/spring-data-jdbc-intro](https://www.baeldung.com/spring-data-jdbc-intro)
 # Spring Data JDBC
 
 Spring Data Jdbc는 Spring Data의 일부로서 JDBC 기반 저장소를 쉽게 구현할 수 있다.
