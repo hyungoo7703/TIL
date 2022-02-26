@@ -11,7 +11,7 @@ Spring Data Jdbc는 Spring Data의 일부로서 JDBC 기반 저장소를 쉽게 
 
 ## 프로젝트에 Spring Data JDBC 추가하기
 
-Spring Data JDB의 사용을 위해서는, JDBC 의존성 스타터가 있는 Spring Boot 애플리케이션이 필요하다. <br>
+Spring Data JDBC의 사용을 위해서는, JDBC 의존성 스타터가 있는 Spring Boot 애플리케이션이 필요하다. <br>
 이에 Spring initializr에서 Spring Boot 기반으로 프로젝트 생성시 Spring Data JDBC를 의존성으로 추가하거나, <br>
 만약 이미 생성된 프로젝트에 의존성을 부여 할 경우에는 pom.xml에 아래 코드를 추가해주면 된다.
 
