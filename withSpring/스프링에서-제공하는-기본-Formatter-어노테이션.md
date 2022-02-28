@@ -15,13 +15,13 @@
 ```java
 public class MyNumberFormatter implements Formatter<Number> { 
 	
-    /* String을 Number로 바꿔주는 메소드 */
+        /* String을 Number로 바꿔주는 메소드 */
 	@Override
 	public Number parse(String text, Locale locale) throws ParseException { // text: 들어오는 문자(타입 변환 전), locale: 지역 정보(지역에 따라 변환되는 형식이 다를 수 있다.) 
 		
 		// 1,000 -> 1000
 		return NumberFormat.getInstance(locale).parse(text); // java에서 지원하는 NumberFormat 객체의 parse 메소드 이용
-    }
+   	}
         
 	/* Number Object를 String로 바꿔주는 메소드 */
 	@Override
