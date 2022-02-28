@@ -13,6 +13,7 @@
 
 + With Spring
 	+ [스프링 이용하여 REST 서비스 구축](withSpring/스프링-이용하여-REST-서비스-구축.md)
+	+ [스프링에서 제공하는 기본 Formatter 어노테이션](withSpring/스프링에서-제공하는-기본-Formatter-어노테이션.md)
 	+ [Validation 사용를 위해 제공되는 어노테이션 정리](withSpring/Validation-사용을-위해-제공되는-어노테이션-정리.md)
 
 ## Git
