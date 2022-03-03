@@ -36,3 +36,19 @@ findFirst()는 해당 스트림에서 첫 번째 요소를 참조하는 Optional
 
 + findAny() <br>
 findAny()는 해당 스트림에서 첫 번째 요소를 참조하는 Optional 객체를 반환한다.(findAny() 메소드는 병렬 스트림일 때 사용함)
+
+### 스트림 사용의 예시
+
+중간연산 filter(), 최종연산 forEach()를 사용한 예시
+
+```java
+ArrayList<String> list = new ArrayList<>();
+
+list.add("HTML");
+list.add("CSS");
+list.add("JAVA");
+list.add("JAVASCRIPT");
+
+/* 스트림의 사용: 내부 반복을 통해 길이가 1보다 긴 String 추출해 요소를 반환 */
+list.stream().filter(s-> s.length() > 1).forEach(System.out::println); // 메소드 참조로 표현(s를 출력할 것이기 때문에)
+```
