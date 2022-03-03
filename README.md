@@ -6,6 +6,7 @@
 
 ## Java 8
 + [람다 표현식](java8/람다-표현식.md)
++ [스트림 API](java8/스트림-API.md)
 
 ## Spring
 + Spring
