@@ -3,7 +3,7 @@
 REST 서비스에서 에러 핸들링을 할때, response body에 에러 메시지를 응답해 주어야 한다. <br>
 이와 같은 이치로 REST 서비스에서 Bean Validation을 적용할 때는 적절한 처리를 통해 보여주어야 한다. <br>
 
-우선 TIL에 올렸던 [스프링 이용하여 REST 서비스 구축](https://github.com/hyungoo7703/TIL/blob/main/withSpring/%EC%8A%A4%ED%94%84%EB%A7%81-%EC%9D%B4%EC%9A%A9%ED%95%98%EC%97%AC-REST-%EC%84%9C%EB%B9%84%EC%8A%A4-%EA%B5%AC%EC%B6%95.md)를 참고하여 <br>
+우선 TIL에 올렸던 [스프링 이용하여 REST 서비스 구축](https://github.com/hyungoo7703/TIL/blob/main/withForSpring/%EC%8A%A4%ED%94%84%EB%A7%81-%EC%9D%B4%EC%9A%A9%ED%95%98%EC%97%AC-REST-%EC%84%9C%EB%B9%84%EC%8A%A4-%EA%B5%AC%EC%B6%95.md)를 참고하여 <br>
 적용해보기 쉽게 소스를 가져와 일부 변경했다. 
 
 ```java
