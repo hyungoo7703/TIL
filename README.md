@@ -1,6 +1,9 @@
 # TIL (Today I Learned)
 모든 내용을 다 정리 할 수 없으니, 내가 잘 사용 할 수 있도록 이해 및 정리
 
+## JavaScript
++ [배열 내장함수](javascript/배열-내장함수.md)
+
 ## Vue
 + [Vue 프로젝트 생성 및 구조](vue/vue-프로젝트-생성-및-구조.md)
 
