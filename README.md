@@ -36,7 +36,10 @@
 + 자료구조
 	+ [스택 & 큐](dataStructure&algorithm/dataStructure/stack%26queue.md)
 + 알고리즘
-	+ [완전탐색]()
+	+ [완전탐색](dataStructure&algorithm/algorithm/brute-force-search.md)
+		+ [비트마스크](dataStructure&algorithm/algorithm/bruteForceSearch/bitmask.md)
+		<!--+ [재귀함수]()-->
+		<!--+ [그래프 탐색 기법 DFS, BFS]()-->
 	
 ## ETC
 + [REST API](etc/restApi.md)
