@@ -16,7 +16,7 @@
 ### 사용방법
 
 ```java
-Stack stack = new Stack(); // java Stack 클래스로 제공
+Stack<Integer> stack = new Stack(); // java Stack 클래스로 제공
 stack.push(1); // push(): 스택의 가장 윗부분에 추가하는 메소드
 stack.push(3);
 stack.push(5);
@@ -45,8 +45,10 @@ System.out.println(stack.pop()); // 5반환
 
 ### 사용방법
 
+java에서 Queue 클래스 활용을 위해서는 LinkedList를 활용해야한다.
+
 ```java
-Queue queue = new LinkedList<>(); // Queue의 사용을 위해선 LinkedList를 사용해야 한다.
+Queue<Integer> queue = new LinkedList<>();
 
 /*
 Enqueue(삽입)하는 메서드 
@@ -57,16 +59,18 @@ queue.offer(2); // 현재 queue에는 1,2가 담겨있음
 
 /*
 Dequeue(삭제)하는 메서드 
-remove(), poll() 제공
+remove() - 삭제 대상이 없을 경우 Exception 반환 
+poll() - 삭제 대상이 없을 경우 null 반환
 */
 queue.remove(); // 1 삭제
 queue.poll(); // 2 삭제
+System.out.println(queue.poll()); // 삭제 값이 없으므로 null 반환
 
 /*
 맨 앞에 있는 요소를 꺼내는 메서드 
-element(), peek() 제공
+element() - 꺼낼 요소가 없을 경우 Exception 반환
+peek() - 꺼낼 요소가 없을 경우 null 반환
 */
-queue.element(); // 큐가 비어서 예외 발생
-queue.peek(); // 큐가 비어서 null 반환
+System.out.println(queue.element()); // Exception
+System.out.println(queue.peek()); // null
 ```
-> add(value), remove(), element() 와 offer(value), poll(), peek()의 차이점은? -> 예외를 발생시키는가 아니면 null이나 false를 반환하는가!!
