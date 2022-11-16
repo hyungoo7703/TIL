@@ -122,3 +122,17 @@ $ 문자열 끝
 ^[a-zA-Z0-9]+@[a-zA-Z0-9]+$ // Email
 ^01([0|1|6|7|8|9])-?([0-9]{3,4})-?([0-9]{4})$ // 전화번호
 ```
+
+### 추가(replaceAll 정규식)
+
+Java에서 대상 문자열을 원하는 문자값으로 변환해주는 함수에는 <br>
+replace(), replaceAll() 등이 있는데 <br>
+그 중 replaceAll의 경우 인자 값에 정규표현식이 들어간다. <br>
+정리한 방식과 조금 다르게 사용되고 있어 정리하려고 한다.
+
+```java
+//replaceAll의 경우 문자열의 시작, 끝을 표기하지 않는다.
+String str = "Hello!";
+str = str.replaceAll("[^a-zA-Z]",""); //[바꾸고싶은 문자의 정규식] 형태
+System.out.println(str); // Hello 출력
+```
