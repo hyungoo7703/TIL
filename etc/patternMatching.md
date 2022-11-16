@@ -46,7 +46,7 @@ boolean check = matcher.find(); // 정규표현식 검증, 일치하면 true
   <tbody>
     <tr>
       <td>^</td>
-      <td>문자열의 시작</td>
+      <td>문자열의 시작 or 부정의 의미 [^a-z]</td>
     </tr>
     <tr>
       <td>$</td>
