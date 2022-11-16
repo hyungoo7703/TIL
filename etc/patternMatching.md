@@ -46,7 +46,7 @@ boolean check = matcher.find(); // 정규표현식 검증, 일치하면 true
   <tbody>
     <tr>
       <td>^</td>
-      <td>문자열의 시작 or 부정의 의미 [^a-z]</td>
+      <td>문자열의 시작, []내에 ^선행 존재시에는 Not의미</td>
     </tr>
     <tr>
       <td>$</td>
@@ -70,7 +70,7 @@ boolean check = matcher.find(); // 정규표현식 검증, 일치하면 true
     </tr>
     <tr>
       <td>[]</td>
-      <td>문자의 집합, 범위 지정 (두 문자 사이에는 -로 표현), []내에 ^선행 존재시 Not의미</td>
+      <td>문자의 집합, []내 문자가 2개면 둘중 하나를 의미, 또한 범위 지정 (두 문자 사이에는 -로 표현)</td>
     </tr>
     <tr>
       <td>{n}</td>
