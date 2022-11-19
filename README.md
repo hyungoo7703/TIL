@@ -18,14 +18,14 @@
 	+ [Spring Boot](spring/springBoot.md)
 	+ [Spring Data](spring/springData.md)
 		+ [Spring Data JDBC](spring/springData/springDataJdbc.md)
-
-+ With Spring / For Spring
++ With Spring 
 	+ [스프링 이용하여 REST 서비스 구축](withForSpring/스프링-이용하여-REST-서비스-구축.md)
-	+ [스프링으로 구축한 REST 서비스에서 필드에러 처리](withForSpring/스프링으로-구축한-REST-서비스에서-필드에러-처리.md)
-	+ [스프링에서 제공하는 기본 Formatter 어노테이션](withForSpring/스프링에서-제공하는-기본-Formatter-어노테이션.md)
-	+ [Validation 사용를 위해 제공되는 어노테이션 정리](withForSpring/Validation-사용을-위해-제공되는-어노테이션-정리.md)
+	+ [스프링으로 구축한 REST 서비스에서 필드에러 처리](withForSpring/스프링으로-구축한-REST-서비스에서-필드에러-처리.md
++ For Spring
 	+ [@Scheduler](withForSpring/@Scheduler.md)
 	+ [JPA Auditing](withForSpring/JPA-Auditing.md)
+	+ [스프링에서 제공하는 기본 Formatter 어노테이션](withForSpring/스프링에서-제공하는-기본-Formatter-어노테이션.md)
+	+ [Validation 사용를 위해 제공되는 어노테이션 정리](withForSpring/Validation-사용을-위해-제공되는-어노테이션-정리.md)
 	+ [JDBC Template CRUD (Feat: 인메모리 DB, Schema 및 Data 초기설정)](withForSpring/JDBC-Template-CRUD(Feat-인메모리-DB-Schema-및-Data-초기설정).md)
 
 ## Git
