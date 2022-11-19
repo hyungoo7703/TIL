@@ -32,6 +32,5 @@ pom.xml에 아래 코드를 추가해주면 된다.
 
 하위 프로젝트에 대한 정리는 이곳을 참고하면 된다. 
 
-+ [Spring Data JPA](springData/springDataJPA.md)
 + [Spring Data JDBC](springData/springDataJdbc.md)
 

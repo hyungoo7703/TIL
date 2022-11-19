@@ -17,7 +17,6 @@
 + Spring
 	+ [Spring Boot](spring/springBoot.md)
 	+ [Spring Data](spring/springData.md)
-		+ [Spring Data JPA](spring/springData/springDataJPA.md)
 		+ [Spring Data JDBC](spring/springData/springDataJdbc.md)
 
 + With Spring / For Spring
@@ -26,7 +25,6 @@
 	+ [스프링에서 제공하는 기본 Formatter 어노테이션](withForSpring/스프링에서-제공하는-기본-Formatter-어노테이션.md)
 	+ [Validation 사용를 위해 제공되는 어노테이션 정리](withForSpring/Validation-사용을-위해-제공되는-어노테이션-정리.md)
 	+ [@Scheduler](withForSpring/@Scheduler.md)
-	+ [JPA(Java Persistence API)](withForSpring/JPA.md)
 	+ [JPA Auditing](withForSpring/JPA-Auditing.md)
 	+ [JDBC Template CRUD (Feat: 인메모리 DB, Schema 및 Data 초기설정)](withForSpring/JDBC-Template-CRUD(Feat-인메모리-DB-Schema-및-Data-초기설정).md)
 
