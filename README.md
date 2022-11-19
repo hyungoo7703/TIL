@@ -20,7 +20,7 @@
 		+ [Spring Data JDBC](spring/springData/springDataJdbc.md)
 + With Spring 
 	+ [스프링 이용하여 REST 서비스 구축](withForSpring/스프링-이용하여-REST-서비스-구축.md)
-	+ [스프링으로 구축한 REST 서비스에서 필드에러 처리](withForSpring/스프링으로-구축한-REST-서비스에서-필드에러-처리.md
+	+ [스프링으로 구축한 REST 서비스에서 필드에러 처리](withForSpring/스프링으로-구축한-REST-서비스에서-필드에러-처리.md)
 + For Spring
 	+ [@Scheduler](withForSpring/@Scheduler.md)
 	+ [JPA Auditing](withForSpring/JPA-Auditing.md)
