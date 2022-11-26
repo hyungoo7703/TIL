@@ -18,7 +18,12 @@ Spring Data JDBC와 같이, Spring Data기반 종속성이 추가된 Spring Boot
 
 ![2-15(1)](https://user-images.githubusercontent.com/93297109/153990587-79a695fb-2a18-4369-b0d0-060c6e807ce7.png)
 
-그림과 같이 data.sql, schema.sql 파일의 추가로 SQL문 스크립트 실행이 가능하다. (인메모리 DB 한정) <br>
+그림과 같이 data.sql, schema.sql 파일의 추가로 SQL문 스크립트 실행이 가능하다. <br>
+
+> <b>Spring Boot 2.6 이상에서 변경점 추가</b> <br><br>
+> 기본 data.sql에서 import.sql로 변경하여 사용 <br>
+> 스크립트 실행이 Hibernate 초기화되기 전에 실행되게 변경되었기에, 사용을 위해서는 <br>
+> application.yml(또는 properties)에 `spring.jpa.defer-datasource-initialization` 옵션 값을 true로 추가해주어야 한다.
 
 ```sql
 -- schema.sql 추가
