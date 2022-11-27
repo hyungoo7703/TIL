@@ -38,7 +38,7 @@
 	+ [완전탐색](dataStructure&algorithm/algorithm/brute-force-search.md)
 		+ [비트마스크](dataStructure&algorithm/algorithm/bruteForceSearch/bitmask.md)
 		+ 재귀함수
-			+ [순열, 조합]()
+			+ [순열, 조합](dataStructure%26algorithm/algorithm/bruteForceSearch/recursiveFunction/permutaion%26combination.md)
 		<!--+ [그래프 탐색 기법 DFS, BFS]()-->
 	
 ## ETC
