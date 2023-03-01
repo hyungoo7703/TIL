@@ -12,10 +12,10 @@
 
 ## Java
 + Java
-	+ [빌더 패턴 파헤치기](java/빌더-패턴.md)
+	+ [빌더 패턴 파헤치기](java/java/빌더-패턴.md)
 + Java 8
-	+ [람다 표현식](java8/람다-표현식.md)
-	+ [스트림 API](java8/스트림-API.md)
+	+ [람다 표현식](java/java8/람다-표현식.md)
+	+ [스트림 API](java/java8/스트림-API.md)
 
 ## Spring
 + Spring
