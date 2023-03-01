@@ -18,31 +18,31 @@
 	+ [스트림 API](java/java8/스트림-API.md)
 
 ## Spring
-+ Spring
++ Spring Project
 	+ [Spring Boot](spring/springBoot.md)
 	+ [Spring Data](spring/springData.md)
 		+ [Spring Data JDBC](spring/springData/springDataJdbc.md)
-+ With Spring 
-	+ [스프링 이용하여 REST 서비스 구축](withForSpring/스프링-이용하여-REST-서비스-구축.md)
-	+ [스프링으로 구축한 REST 서비스에서 필드에러 처리](withForSpring/스프링으로-구축한-REST-서비스에서-필드에러-처리.md)
++ Try implementing it with Spring
+	+ [Spring 이용하여 REST 서비스 구축](withForSpring/스프링-이용하여-REST-서비스-구축.md)
+	+ [Spring 으로 구축한 REST 서비스에서 필드에러 처리](withForSpring/스프링으로-구축한-REST-서비스에서-필드에러-처리.md)
+	+ [JDBC Template CRUD (Feat: 인메모리 DB, Schema 및 Data 초기설정)](withForSpring/JDBC-Template-CRUD(Feat-인메모리-DB-Schema-및-Data-초기설정).md)
 + For Spring
 	+ [@Scheduler](withForSpring/@Scheduler.md)
 	+ [JPA Auditing](withForSpring/JPA-Auditing.md)
-	+ [스프링에서 제공하는 기본 Formatter 어노테이션](withForSpring/스프링에서-제공하는-기본-Formatter-어노테이션.md)
+	+ [Spring에서 제공하는 기본 Formatter 어노테이션](withForSpring/스프링에서-제공하는-기본-Formatter-어노테이션.md)
 	+ [Validation 사용를 위해 제공되는 어노테이션 정리](withForSpring/Validation-사용을-위해-제공되는-어노테이션-정리.md)
-	+ [JDBC Template CRUD (Feat: 인메모리 DB, Schema 및 Data 초기설정)](withForSpring/JDBC-Template-CRUD(Feat-인메모리-DB-Schema-및-Data-초기설정).md)
 
 ## Git
 + [Git 명령어 정리](git/git.md)
 
 ## 자료구조 & 알고리즘
 + 자료구조
-	+ [스택 & 큐](dataStructure&algorithm/dataStructure/stack%26queue.md)
+	+ [스택 & 큐](csKnowledge/dataStructure/stack%26queue.md)
 + 알고리즘
-	+ [완전탐색](dataStructure&algorithm/algorithm/brute-force-search.md)
-		+ [비트마스크](dataStructure&algorithm/algorithm/bruteForceSearch/bitmask.md)
+	+ [완전탐색](csKnowledge/algorithm/brute-force-search.md)
+		+ [비트마스크](csKnowledge/algorithm/bruteForceSearch/bitmask.md)
 		+ 재귀함수
-			+ [순열, 조합](dataStructure%26algorithm/algorithm/bruteForceSearch/recursiveFunction/permutaion%26combination.md)
+			+ [순열, 조합](csKnowledge/algorithm/bruteForceSearch/recursiveFunction/permutaion%26combination.md)
 		<!--+ [그래프 탐색 기법 DFS, BFS]()-->
 	
 ## ETC
