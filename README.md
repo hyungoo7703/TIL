@@ -35,7 +35,7 @@
 ## Git
 + [Git 명령어 정리](git/git.md)
 
-## 자료구조 & 알고리즘
+## 자료구조 & 알고리즘 with Java
 + 자료구조
 	+ [스택 & 큐](csKnowledge/dataStructure/stack%26queue.md)
 + 알고리즘
