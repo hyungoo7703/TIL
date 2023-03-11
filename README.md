@@ -12,6 +12,7 @@
 
 ## Java
 + Java
+	+ [WeakHashMap](java/java/WeakHashMap.md)
 	+ [빌더 패턴 파헤치기](java/java/빌더-패턴.md)
 + Java 8
 	+ [람다 표현식](java/java8/람다-표현식.md)
