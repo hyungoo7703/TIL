@@ -2,9 +2,9 @@
 모든 내용을 다 정리 할 수 없으니, 내가 잘 사용 할 수 있도록 이해 및 정리
 
 ## JavaScript
++ [querySelector(All)()](javascript/querySelector(All).md)
 + [배열 내장함수](javascript/배열-내장함수.md)
 + [프로토타입](javascript/프로토타입.md)
-+ [querySelector(All)()](javascript/querySelector(All).md)
 
 ## Vue
 + [Vue 프로젝트 생성 및 구조](vue/vue-프로젝트-생성-및-구조.md)
@@ -15,6 +15,7 @@
 	+ [Java에서 스레드(Thread)다루기](java/java/Java에서-Thread다루기.md)
 	+ [WeakHashMap](java/java/WeakHashMap.md)
 	+ [빌더 패턴 파헤치기](java/java/빌더-패턴.md)
+	+ [정규표현식(Regular Expression)](java/java/patternMatching.md)
 + Java 8
 	+ [람다 표현식](java/java8/람다-표현식.md)
 	+ [스트림 API](java/java8/스트림-API.md)
@@ -25,9 +26,9 @@
 	+ [Spring Data](spring/springData.md)
 		+ [Spring Data JDBC](spring/springData/springDataJdbc.md)
 + Try implementing it with Spring
+	+ [JDBC Template CRUD (Feat: 인메모리 DB, Schema 및 Data 초기설정)](withForSpring/JDBC-Template-CRUD(Feat-인메모리-DB-Schema-및-Data-초기설정).md)
 	+ [Spring 이용하여 REST 서비스 구축](withForSpring/스프링-이용하여-REST-서비스-구축.md)
 	+ [Spring 으로 구축한 REST 서비스에서 필드에러 처리](withForSpring/스프링으로-구축한-REST-서비스에서-필드에러-처리.md)
-	+ [JDBC Template CRUD (Feat: 인메모리 DB, Schema 및 Data 초기설정)](withForSpring/JDBC-Template-CRUD(Feat-인메모리-DB-Schema-및-Data-초기설정).md)
 + For Spring
 	+ [@Scheduler](withForSpring/@Scheduler.md)
 	+ [JPA Auditing](withForSpring/JPA-Auditing.md)
@@ -49,10 +50,10 @@
 	
 ## ETC
 + [REST API](etc/restApi.md)
-+ [정규표현식(Regular Expression)](etc/patternMatching.md)
 + [윈도우 포트 종료하는 방법](etc/윈도우-포트-종료하는-방법.md)
 
 ## ERROR
-+ [node_modules 설치오류](error/node_modules-설치오류.md)
 + [@GeneratedValue 관련 주의사항(JPA)](error/@GeneratedValue-관련-주의사항.md)
++ [node_modules 설치오류](error/node_modules-설치오류.md)
+
 
