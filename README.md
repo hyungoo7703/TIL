@@ -42,6 +42,7 @@
 + 자료구조
 	+ [스택 & 큐](csKnowledge/dataStructure/stack%26queue.md)
 + 알고리즘
+	+ [정렬](csKnowledge/algorithm/sorting.md)
 	+ [완전탐색](csKnowledge/algorithm/brute-force-search.md)
 		+ [비트마스크](csKnowledge/algorithm/bruteForceSearch/bitmask.md)
 		+ 재귀함수
