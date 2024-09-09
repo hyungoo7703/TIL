@@ -12,7 +12,7 @@ arr.reduce(callback[, initialValue])
 설명은 아래 링크를 참조하면된다. <br>
 [[Node.js] javascript: Array.reduce() 사용 방법 정리](https://miiingo.tistory.com/365)
 
-## 실무관점에서 본 reduce(약관 객체를 예시로)
+## 실무관점에서 본 `reduce` (약관 객체를 예시로)
 
 ```javascript
 const termData = this.terms.reduce((acc, term) => {
@@ -32,18 +32,21 @@ const termData = this.terms.reduce((acc, term) => {
 3. acc 객체를 반환
 
 <br>
-### 직관적으로 보면 아래와 같다.
-예를 들어, this.terms가 다음과 같은 배열이라고 가정
+직관적으로 보면 아래와 같다. 
+<br>
+예를 들어, this.terms가 다음과 같은 배열이라고 가정해보자.
+
 ```javascript
-[
+const terms = [
   { seq: 1, isEssential: true, isChecked: true },
   { seq: 2, isEssential: true, isChecked: false },
   { seq: 3, isEssential: false, isChecked: true }
 ]
 ```
 
-<b>'reduce'의 결과</b>
+<b>`reduce`의 결과</b>
 ```javascript
+//acc
 {
   필수약관1: true,
   필수약관2: false,
