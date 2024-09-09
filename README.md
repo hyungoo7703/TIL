@@ -4,6 +4,7 @@
 ## JavaScript
 + [querySelector(All)()](javascript/querySelector(All).md)
 + [배열 내장함수](javascript/배열-내장함수.md)
+	+ [reduce](javascript/array/reduce.md)
 + [프로토타입](javascript/프로토타입.md)
 
 ## Vue
