@@ -7,6 +7,8 @@
 	+ [reduce](javascript/array/reduce.md)
 + [프로토타입](javascript/프로토타입.md)
 
+## TypeScript
+
 ## Vue
 + [Vue 프로젝트 생성 및 구조](vue/vue-프로젝트-생성-및-구조.md)
 + [Vue 라이프 사이클 속성](vue/vue-라이프-사이클-속성.md)
