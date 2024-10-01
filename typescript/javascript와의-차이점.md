@@ -1,4 +1,4 @@
-## JavaScript와의 차이점
+# JavaScript와의 차이점
 
 + 타입 시스템
   + TypeScript는 정적 타입 언어로, 변수, 함수, 객체 등에 명시적으로 타입을 지정할 수 있다.
