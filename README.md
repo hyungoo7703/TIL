@@ -11,6 +11,7 @@
 + [JavaScript와의 차이점](typescript/javascript와의-차이점.md)
 + [Narrowing](typescript/Narrowing.md)
 	+ [Truthiness narrowing](typescript/truthiness-narrowing.md)
+ + [컴파일러 옵션](typescript/컴파일러-옵션.md)
 
 ## Vue
 + [Vue 프로젝트 생성 및 구조](vue/vue-프로젝트-생성-및-구조.md)
