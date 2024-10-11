@@ -46,3 +46,22 @@
 ### 8. destroyed
 
 + 뷰 인스턴스가 완전히 파괴되고 나서 호출되는 라이프 사이클이다.
+
+## (추가) Vue3 라이프사이클 훅
+vue3에서는 개발자의 편의에 따라 Options API나 Composition API를 선택하여 사용하기에, 라이프사이클 훅도 약간 다르다.
+
+### Options API에서의 라이프사이클 훅
+<b>update까지는 vue2와 동일</b>
+### [변경점]
+1. beforeDestroy → beforeUnmount: Vue 인스턴스가 제거되기 직전에 호출
+2. destroyed → unmounted: Vue 인스턴스가 제거된 후 호출, 이 훅에서는 Vue 인스턴스의 모든 디렉티브가 바인딩 해제되고 이벤트 리스너가 제거됨
+
+### Composition API에서의 라이프사이클 훅
+<b>Composition API에서는 setup() 메서드 내에서 라이프사이클 훅을 사용</b>
++ setup(): beforeCreate와 created 훅 대신 사용
++ onBeforeMount: beforeMount 훅 대신 사용
++ onMounted: mounted 훅 대신 사용
++ onBeforeUpdate: beforeUpdate 훅 대신 사용
++ onUpdated: updated 훅 대신 사용
++ onBeforeUnmount: beforeUnmount 훅 대신 사용
++ onUnmounted: unmounted 훅 대신 사용
