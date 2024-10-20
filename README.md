@@ -8,8 +8,8 @@
   	+ [문자열(String) 내장함수](javascript/문자열-내장함수.md)
 	+ [배열 내장함수](javascript/배열-내장함수.md)
 		+ [reduce](javascript/array/reduce.md)
+	+ [기타 유용한 내장함수](javascript/기타-유용한-내장함수.md)
 	
-
 ## TypeScript
 + [JavaScript와의 차이점](typescript/javascript와의-차이점.md)
 + [Narrowing](typescript/Narrowing.md)
