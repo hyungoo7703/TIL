@@ -16,11 +16,14 @@ SSL 인증서는 만료일 기준 90일 이내부터 갱신 신청이 가능
 ### Case 1. Apache에서만 SSL 처리하는 경우
 Apache에 SSL 인증서를 설치한 뒤, <br>
 SSL 가상호스트를 설정하고 JkMount 지시자로 Tomcat으로 요청을 전달하는 방법이다. <br>
-Tomcat에는 AJP 커넥터만 설정하면 된다.
+Tomcat에는 AJP 커넥터만 설정하면 된다. <br>
+만약 Node.js 애플리케이션 기반 웹이라면, <br>
+Tomcat 요청 전달방법 대신 Apache의 프록시 모듈을 사용하여 Node.js 애플리케이션으로 요청을 전달하는 방식으로 처리하면 된다.
 
 일반적으로 /etc/apache2/sites-available/ 또는 /etc/httpd/conf.d/ 디렉토리에 위치한 Apache 설정파일을 수정하면 된다. <br>
 SSL을 사용할 도메인의 Virtual Host 설정을 수정 해주어 처리한다.
 ```
+# Tomcat 버전
 <VirtualHost *:443>
     ServerName www.yourdomain.com
     DocumentRoot /var/www/yourdomain
@@ -31,6 +34,24 @@ SSL을 사용할 도메인의 Virtual Host 설정을 수정 해주어 처리한�
     SSLCertificateChainFile /path/to/intermediate.crt #중간 인증서
     
     # 기타 필요한 설정들
+</VirtualHost>
+
+# Node.js 애플리케이션 버전
+<VirtualHost *:443>
+  ServerName www.yourdomain.com
+  SSLEngine on
+  SSLCertificateFile /path/to/your_domain.crt
+  SSLCertificateKeyFile /path/to/your_domain.key
+  
+  ProxyRequests Off
+  ProxyPreserveHost On
+  ProxyVia Full
+  <Proxy *>
+    Require all granted
+  </Proxy>
+
+  ProxyPass / http://localhost:3000/
+  ProxyPassReverse / http://localhost:3000/
 </VirtualHost>
 ```
 Apache를 재시작 하여 SSL 처리가 완료된다.
