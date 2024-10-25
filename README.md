@@ -64,6 +64,7 @@
 ## 자료구조 & 알고리즘 with Java
 + 자료구조
 	+ [스택 & 큐](csKnowledge/dataStructure/stack%26queue.md)
+	+ [배열](csKnowledge/dataStructure/배열.md)
 + 알고리즘
 	+ [정렬](csKnowledge/algorithm/sorting.md)
 	+ [완전탐색](csKnowledge/algorithm/brute-force-search.md)
