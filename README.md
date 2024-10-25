@@ -41,7 +41,8 @@
 	+ [람다 표현식](java/java8/람다-표현식.md)
 	+ [스트림 API](java/java8/스트림-API.md)
 + Java 11
-	+ 새롭게 추가된 메서드
+	+ [새롭게 추가된 메서드](java/java11/새롭게-추가된-메서드.md)
+
 ## Spring
 + Spring Project
 	+ [Spring Boot](spring/springBoot.md)
