@@ -8,6 +8,13 @@
 이에 대한 해결책으로 스트림(Stream) API를 도입하게 되는데, 한마디로 **여러 자료의 처리에 대한 기능을 구현한 것**이다. <br>
 자료의 추상화가 되어 있기에 우리는 자료에 따라 기능을 각각 새로 구현할 필요없이 공통된 방법으로 이용하면 된다.
 
+## 스트림의 특징
+
++ 내부 반복: 스트림은 내부 반복을 사용하여 작업을 수행한다.
++ 지연 연산: 최종 연산이 수행되기 전까지 중간 연산이 실행되지 않는다.
++ 일회용: 한 번 사용한 스트림은 재사용할 수 없다.
++ 병렬 처리: 멀티코어 환경에서 병렬 처리를 쉽게 구현할 수 있다.
+
 ## 스트림 API의 동작 흐름
 
 스트림은 다음과 같이  3가지 단계에 걸쳐서 동작한다.
@@ -20,26 +27,24 @@
 
 #### 중간연산
 
-+ filter() <br>
-filter()는 중간에 넣고 그 조건이 참인 경우만 추출한다. 즉 더 작은 컬렉션을 만들어내는 연산이라 할 수 있다.
-
-+ map() <br>
-map()은 해당 스트림의 요소들을 주어진 함수에 인수로 전달하여, 그 반환값들로 이루어진 새로운 스트림을 반환한다.(데이터 변환)
++ filter(): 조건에 맞는 요소만 추출
++ map(): 각 요소를 다른 요소로 변환
++ sorted(): 요소를 정렬
++ distinct(): 중복을 제거
++ limit(): 요소의 개수를 제한
++ skip(): 처음 n개의 요소를 건너뜀
 
 #### 최종연산
 
-+ forEach() <br>
-forEach()는 요소를 하나씩 꺼내는 기능을 수행한다.
-
-+ findFirst() <br>
-findFirst()는 해당 스트림에서 첫 번째 요소를 참조하는 Optional 객체를 반환한다.
-
-+ findAny() <br>
-findAny()는 해당 스트림에서 첫 번째 요소를 참조하는 Optional 객체를 반환한다.(findAny() 메소드는 병렬 스트림일 때 사용함)
++ forEach(): 각 요소에 대해 지정된 작업을 수행
++ collect(): 스트림의 요소를 수집하여 컬렉션 등으로 변환
++ reduce(): 스트림의 요소를 하나의 결과로 줄임
++ count(): 요소의 개수를 반환
++ anyMatch(), allMatch(), noneMatch(): 조건을 만족하는지 검사
 
 ### 스트림 사용의 예시
 
-중간연산 filter(), 최종연산 forEach()를 사용한 예시
++ 중간연산 filter(), 최종연산 forEach()를 사용한 예시
 
 ```java
 ArrayList<String> list = new ArrayList<>();
@@ -52,3 +57,26 @@ list.add("JAVASCRIPT");
 /* 스트림의 사용: 내부 반복을 통해 길이가 1보다 긴 String 추출해 요소를 반환 */
 list.stream().filter(s-> s.length() > 1).forEach(System.out::println); // 메소드 참조로 표현(s를 출력할 것이기 때문에)
 ```
+
++ (적용예시) 길이가 4보다 큰 문자열을 대문자로 변환하여 출력
+
+```java
+List<String> list = Arrays.asList("HTML", "CSS", "JAVA", "JAVASCRIPT");
+
+list.stream()
+    .filter(s -> s.length() > 4)
+    .map(String::toUpperCase)
+    .forEach(System.out::println);
+```
+
++ (적용예시) 문자열 길이의 합계 계산
+
+```java
+List<String> list = Arrays.asList("HTML", "CSS", "JAVA", "JAVASCRIPT");
+
+int sum = list.stream()
+    .mapToInt(String::length)
+    .sum();
+System.out.println("총 문자 길이: " + sum);
+```
+
