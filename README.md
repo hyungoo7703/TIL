@@ -76,6 +76,10 @@
 			+ [순열, 조합](csKnowledge/algorithm/bruteForceSearch/recursiveFunction/permutaion%26combination.md)
 		<!--+ [그래프 탐색 기법 DFS, BFS]()-->
 	
+## 자격증
++ SQL[개발자]
+	+ [과목1](qualifications/sqld/subject1.md)
+
 ## ETC
 + [SSL](etc/ssl.md)
 + [REST API](etc/restApi.md)
