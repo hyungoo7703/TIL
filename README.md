@@ -91,8 +91,6 @@
 + [윈도우 포트 종료하는 방법](etc/윈도우-포트-종료하는-방법.md)
 
 ## ERROR
-+ [@GeneratedValue 관련 주의사항(JPA)](error/@GeneratedValue-관련-주의사항.md)
++ [안티패턴 문제](error/안티패턴-문제.md)
 + [node_modules 설치오류](error/node_modules-설치오류.md)
-+ [구문(Syntax) 오류](error/구문(syntax)-오류.md)
-
-
++ [@GeneratedValue 관련 주의사항(JPA)](error/@GeneratedValue-관련-주의사항.md)
