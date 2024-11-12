@@ -93,5 +93,6 @@
 ## ERROR
 + [@GeneratedValue 관련 주의사항(JPA)](error/@GeneratedValue-관련-주의사항.md)
 + [node_modules 설치오류](error/node_modules-설치오류.md)
++ [구문(Syntax) 오류](error/구문(syntax)-오류.md)
 
 
