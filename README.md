@@ -83,6 +83,7 @@
 ## 자격증
 + SQL[개발자]
 	+ [과목1](qualifications/sqld/subject1.md)
+ 	+ [과목2](qualifications/sqld/subject2.md) 
 
 ## ETC
 + [SSL](etc/ssl.md)
