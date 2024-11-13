@@ -117,3 +117,91 @@ GROUP BY GROUPING SETS(
 Top N 쿼리에 대한 설명은 TIL에 정리한 [Top N 쿼리](https://github.com/hyungoo7703/TIL/blob/main/sql/TOP-N-%EC%BF%BC%EB%A6%AC.md) 참조.
 
 ### 6. 계층형 질의와 셀프 조인
+
+#### 계층형 질의
+테이블의 계층적 데이터(주로 부모-자식 관계를 가진 데이터)를 처리할 때 사용한다.
+
+> #### Oracle 계층형 질의
+[기본 문법]
+```SQL
+SELECT [LEVEL], column, ...
+FROM table
+START WITH condition
+CONNECT BY [NOCYCLE] PRIOR condition
+[ORDER SIBLINGS BY column];
+```
++ **LEVE**L: 계층의 깊이 (루트 = 1)
++ **START WITH 절**: 계층 구조의 루트(row)를 지정
++ **CONNECT BY 절**: 계층 구조를 정의하는 데 사용, 부모-자식 관계를 지정
+
+> ##### PRIOR(Oracle의 계층형 질의에서 사용되는 특별한 연산자)
++ 계층형 구조에서 현재 행과 부모/자식 행을 연결할 때 사용
++ CONNECT BY 절에서 사용되어 계층 구조의 방향을 결정
+
+[사용 방식]
+1. 부모에서 자식 방향 (Top-down):
+```SQL
+CONNECT BY PRIOR 자식컬럼 = 부모컬럼
+```
+2. 자식에서 부모 방향 (Bottom-up):
+```SQL
+CONNECT BY PRIOR 부모컬럼 = 자식컬럼
+```
+
+[예시]
+```SQL
+-- 조직도를 위에서 아래로 전개
+SELECT employee_id, manager_id
+FROM employees
+START WITH manager_id IS NULL
+CONNECT BY PRIOR employee_id = manager_id;
+
+-- 조직도를 아래에서 위로 전개
+SELECT employee_id, manager_id
+FROM employees
+START WITH employee_id = 100
+CONNECT BY PRIOR manager_id = employee_id;
+```
+
+> ##### SIBLINGS(Oracle 계층형 질의에서 ORDER BY 절과 함께 사용되는 키워드로, 같은 레벨(형제 노드)에 있는 데이터들을 정렬할 때 사용)
++ 같은 부모를 가진 형제 노드들끼리만 정렬
++ 계층 구조를 유지하면서 정렬 수행
+
+> #### SQL Server 계층형 질의
+[기본 문법 (CTE 사용)]
+```SQL
+WITH RecursiveCTE AS (
+    -- 기준 멤버(Anchor)
+    SELECT column, 0 AS Level
+    FROM table
+    WHERE condition
+
+    UNION ALL
+
+    -- 재귀 멤버(Recursive)
+    SELECT t.column, r.Level + 1
+    FROM table t
+    INNER JOIN RecursiveCTE r ON condition
+)
+SELECT * FROM RecursiveCTE;
+```
+
+#### Oracle, SQL Server 계층형 질의의 주요 차이점
++ 레벨 시작값 <br>
+Oracle: LEVEL은 1부터 시작 <br>
+SQL Server: 사용자가 정의 (일반적으로 0부터 시작) <br>
++ 구현 방식 <br>
+Oracle: 전용 키워드 제공 <br>
+SQL Server: 재귀 CTE 사용 <br>
++ 기능 <br>
+Oracle: 더 많은 계층형 전용 기능 제공 <br>
+SQL Server: CTE의 유연성을 활용한 구현 필요 <br>
++ 성능 <br>
+Oracle: 계층형 질의에 최적화 <br>
+SQL Server: 재귀 제한 있음 (기본 100회)
+
+#### 셀프 조인
+
+### 7. PIVOT 절과 UNPIVOT절
+
+### 8. 정규 표현식
