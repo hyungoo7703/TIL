@@ -61,6 +61,7 @@
 
 ## SQL
 + [윈도우 함수](sql/윈도우-함수.md)
++ [TOP N 쿼리](sql/TOP-N-쿼리.md)
 
 ## Git
 + [Git 명령어 정리](git/git.md)
