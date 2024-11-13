@@ -139,13 +139,14 @@ CONNECT BY [NOCYCLE] PRIOR condition
 + CONNECT BY 절에서 사용되어 계층 구조의 방향을 결정
 
 [사용 방식]
+PRIOR의 위치는 "이미 처리된" 데이터 <br>
 1. 부모에서 자식 방향 (Top-down):
 ```SQL
 CONNECT BY PRIOR 자식컬럼 = 부모컬럼
 ```
 2. 자식에서 부모 방향 (Bottom-up):
 ```SQL
-CONNECT BY PRIOR 부모컬럼 = 자식컬럼
+CONNECT BY 자식컬럼 = PRIOR 부모컬럼
 ```
 
 [예시]
