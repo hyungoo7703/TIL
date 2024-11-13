@@ -138,7 +138,7 @@ CONNECT BY [NOCYCLE] PRIOR condition
 + 계층형 구조에서 현재 행과 부모/자식 행을 연결할 때 사용
 + CONNECT BY 절에서 사용되어 계층 구조의 방향을 결정
 
-[사용 방식]
+[사용 방식] <br>
 PRIOR의 위치는 "이미 처리된" 데이터 <br>
 1. 부모에서 자식 방향 (Top-down):
 ```SQL
