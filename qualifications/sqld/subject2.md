@@ -202,8 +202,165 @@ Oracle: 계층형 질의에 최적화 <br>
 SQL Server: 재귀 제한 있음 (기본 100회)
 
 #### 셀프 조인
+[정의] 하나의 테이블을 자기 자신과 조인하는 SQL 조인 기법
+
++ 동일한 테이블을 여러 번 참조하므로 반드시 테이블 별칭(alias)을 사용해야 한다.
++ INNER JOIN, OUTER JOIN 등 모든 종류의 조인 사용이 가능하다.
++ 주로 계층 구조의 데이터를 다룰 때 쓴다.
++ 윈도우 함수를 사용하지 않고 윈도우 함수처럼 표현 할 수 있으나, 윈도우 함수에 비해 일반적으로 성능이 떨어지긴 한다.
+
+[예시] 직원-관리자 관계 예시
+```SQL
+SELECT 
+    e1.employee_id,
+    e1.name as employee_name,
+    e2.name as manager_name
+FROM 
+    employees e1 
+LEFT JOIN 
+    employees e2 ON e1.manager_id = e2.employee_id
+```
 
 ### 7. PIVOT 절과 UNPIVOT절
+
+#### PIVOT
+[정의] 행으로 되어있는 데이터를 열로 변환하여 보여주는 기능
+
+[기본 구문]
+```SQL
+-- Oracle PIVOT 기본 구문
+SELECT *
+FROM (기준 쿼리)
+PIVOT (
+    집계함수(집계할컬럼)
+    FOR 피벗기준컬럼 
+    IN (피벗컬럼값1 별칭1, 피벗컬럼값2 별칭2, ...)
+);
+
+-- SQL Server PIVOT 기본 구문
+SELECT *
+FROM 테이블명
+PIVOT (
+    집계함수(집계할컬럼)
+    FOR 피벗기준컬럼 
+    IN ([피벗컬럼값1], [피벗컬럼값2], ...)
+) AS 별칭;
+```
+> ##### 주요차이점
++ 구문 구조 <br>
+Oracle은 PIVOT 시 기준 쿼리에 서브쿼리가 필수 <br>
+SQL Server는 전체 PIVOT 결과와 UNPIVOT 결과에 별칭(AS) 지정이 필수 <br>
++ IN절 표현 <br>
+Oracle: IN ('값' AS 별칭) <br>
+SQL Server: IN ([값])
+
+[기본 예시] <br>
+다음과 같은 직원 데이터가 있다고 가정:
+```SQL
+-- 원본 데이터
+SELECT 직원, 부서, 월급 FROM 직원;
+```
+```
+직원    부서    월급
+Alice   HR     1000
+Bob     IT     2000
+Charlie IT     1500
+David   HR     2000
+Eve     IT     1800
+```
+이를 PIVOT을 사용하여 부서별 직원 월급을 열로 변환할 수 있다.
+```SQL
+-- Oracle PIVOT
+SELECT *
+FROM (SELECT 직원, 부서, 월급 FROM 직원)
+PIVOT (
+    SUM(월급) FOR 부서 IN ('HR' AS HR, 'IT' AS IT)
+);
+
+-- SQL Server PIVOT
+SELECT *
+FROM 직원
+PIVOT (
+    SUM(월급)
+    FOR 부서
+    IN ([HR], [IT])
+) AS pivot_result;
+```
+```
+직원    HR    IT
+Alice   1000  NULL
+Bob     NULL  2000
+Charlie NULL  1500
+David   2000  NULL
+Eve     NULL  1800
+```
+
+#### UNPIVOT
+[정의] <br>
+UNPIVOT은 PIVOT의 반대 작업으로, 열로 되어있는 데이터를 행으로 변환
+
+[기본 구문]
+```SQL
+-- Oracle UNPIVOT 기본 구문
+SELECT *
+FROM 테이블명
+UNPIVOT (
+    (값컬럼1, 값컬럼2)
+    FOR 구분컬럼 
+    IN (
+        (컬럼1, 컬럼2) AS '값1',
+        (컬럼3, 컬럼4) AS '값2'
+    )
+);
+
+-- SQL Server UNPIVOT 기본 구문
+SELECT *
+FROM 테이블명
+UNPIVOT (
+    값컬럼
+    FOR 구분컬럼 
+    IN (컬럼1, 컬럼2, 컬럼3)
+) AS 별칭;
+```
+
+[기본 예시] <br>
+앞서 생성한 PIVOT 데이터를 다시 UNPIVOT 진행
+```
+직원    HR    IT
+Alice   1000  NULL
+Bob     NULL  2000
+Charlie NULL  1500
+David   2000  NULL
+Eve     NULL  1800
+```
+오라클에선 PIVOT 전체 결과에 대해 별칭(Alias)을 붙일 수 없으니 <br>
+With 구문이나 서브쿼리 같은걸로 pivot_result 결과를 담아줬다고 가정.
+```SQL
+-- Oracle UNPIVOT
+SELECT *
+FROM pivot_result
+UNPIVOT (
+    월급 FOR 부서 IN (HR AS 'HR', IT AS 'IT')
+)
+ORDER BY 직원명;
+
+-- SQL Server UNPIVOT
+SELECT *
+FROM pivot_result
+UNPIVOT (
+    월급
+    FOR 부서
+    IN ([HR], [IT])
+) AS unpivot_result;
+```
+```
+직원    부서    월급
+Alice   HR     1000
+Bob     IT     2000
+Charlie IT     1500
+David   HR     2000
+Eve     IT     1800
+```
 
 ### 8. 정규 표현식
 
