@@ -366,10 +366,132 @@ Eve     IT     1800
 
 ## 관리 구문
 
-### 1. DML
+### 1. DML (Data Manipulation Language)
+데이터를 조작하는 언어로, 테이블의 레코드를 다루는 데 사용
 
-### 2. TCL
+#### 주요 명령어
+```SQL
+-- INSERT: 데이터 삽입
+INSERT INTO employees (emp_id, name, salary)
+VALUES (1, 'John Doe', 50000);
 
-### 3. DDL
+-- UPDATE: 데이터 수정
+UPDATE employees 
+SET salary = 55000 
+WHERE emp_id = 1;
 
-### 4. DCL
+-- DELETE: 데이터 삭제
+DELETE FROM employees 
+WHERE emp_id = 1;
+
+-- SELECT: 데이터 조회
+SELECT * FROM employees 
+WHERE salary > 50000;
+```
+
+### 2. TCL (Transaction Control Language)
+트랜잭션을 제어하는 명령어
+
+#### 주요 명령어
+```SQL
+-- COMMIT: 트랜잭션 확정
+COMMIT;
+
+-- ROLLBACK: 트랜잭션 취소
+ROLLBACK;
+
+-- SAVEPOINT: 트랜잭션 내 저장점 생성
+SAVEPOINT save1;
+ROLLBACK TO save1;
+```
+SAVEPOINT와 ROLLBACK TO는 아직 COMMIT 되지 않은 트랜잭션 내에서만 동작
+
+### 3. DDL (Data Definition Language)
+데이터베이스 객체를 정의하는 언어
+
+#### 주요 명령어
+
+> #### CREATE: 객체 생성
+```SQL
+-- CREATE: 객체 생성
+CREATE TABLE employees (
+    emp_id NUMBER PRIMARY KEY,
+    name VARCHAR2(100),
+    salary NUMBER
+);
+```
+
+> #### ALTER: 객체 수정
++ Oracle
+```SQL
+-- 컬럼 추가
+ALTER TABLE employees ADD (
+    email VARCHAR2(100),
+    phone VARCHAR2(20)
+);
+
+-- 컬럼 수정
+ALTER TABLE employees MODIFY (
+    email VARCHAR2(200),
+    phone VARCHAR2(30) NOT NULL
+);
+
+-- 컬럼 이름 변경
+ALTER TABLE employees RENAME COLUMN email TO email_address;
+
+-- 컬럼 삭제
+ALTER TABLE employees DROP COLUMN email;
+
+-- 제약조건 추가
+ALTER TABLE employees ADD CONSTRAINT emp_email_uk UNIQUE (email);
+
+-- 제약조건 삭제
+ALTER TABLE employees DROP CONSTRAINT emp_email_uk;
+```
++ SQL Server
+```SQL
+-- 컬럼 추가
+ALTER TABLE employees ADD
+    email VARCHAR(100),
+    phone VARCHAR(20);
+
+-- 컬럼 수정
+ALTER TABLE employees ALTER COLUMN 
+    email VARCHAR(200);
+
+-- 컬럼 이름 변경
+EXEC sp_rename 'employees.email', 'email_address', 'COLUMN';
+
+-- 컬럼 삭제
+ALTER TABLE employees DROP COLUMN email;
+
+-- 제약조건 추가
+ALTER TABLE employees ADD CONSTRAINT emp_email_uk UNIQUE (email);
+
+-- 제약조건 삭제
+ALTER TABLE employees DROP CONSTRAINT emp_email_uk;
+```
+
+> #### DROP: 객체 삭제
+```SQL
+DROP TABLE employees;
+```
+
+> #### TRUNCATE: 테이블 데이터 전체 삭제(테이블 구조, 권한, 인덱스 등은 유지)
+```SQL
+TRUNCATE TABLE employees;
+```
+
+### 4. DCL (Data Control Language)
+데이터베이스에 대한 접근 권한을 제어하는 언어
+
+#### 주요 명령어
+```SQL
+-- GRANT: 권한 부여
+GRANT SELECT, INSERT ON employees 
+TO user1;
+
+-- REVOKE: 권한 회수
+REVOKE SELECT ON employees 
+FROM user1;
+```
