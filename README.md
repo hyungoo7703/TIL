@@ -67,7 +67,8 @@
 + [Git 명령어 정리](git/git.md)
 
 ## Linux
-+ [Shell](linux/shell.md)
++ 기본
+	+ [Shell](linux/basic/shell.md)
 + [Linux 명령어 정리](linux/linux.md)
 
 ## 자료구조 & 알고리즘 with Java
