@@ -86,7 +86,9 @@
 ## 자격증
 + SQL[개발자]
 	+ [과목1](qualifications/sqld/subject1.md)
- 	+ [과목2](qualifications/sqld/subject2.md) 
+ 	+ [과목2](qualifications/sqld/subject2.md)
++ 리눅스마스터 2급
++ 정보처리기사
 
 ## ETC
 + [SSL](etc/ssl.md)
