@@ -26,6 +26,21 @@ Arrays 클래스의 sort 메서드를 사용한다. (이때, 정렬은 유니코
 > Arrays.sort() 메서드는 두번째 인수로 Comparator 객체를 전달할 수 있다. <br>
 > Collections.reverseOrder() 메서드는 Comparator 객체를 반환하는데 이 객체는 두 요소를 비교할 때 역순으로 비교한다.
 
+```java
+// Comparator 인터페이스 사용 예시
+
+// 커스텀 정렬을 위한 Comparator 사용
+Arrays.sort(arr, new Comparator<Integer>() {
+    @Override
+    public int compare(Integer o1, Integer o2) {
+        return o1.compareTo(o2);
+    }
+});
+
+// Lambda를 사용한 간단한 표현
+Arrays.sort(arr, (a, b) -> a.compareTo(b));
+```
+
 ## 2. List (ArrayList)
 
 Collections 클래스의 sort 메서드를 사용한다. (Arrays 클래스의 sort와 마찬가지로, 정렬은 유니코드를 기준으로 정렬되며 순서는 아래와 같다.)
@@ -82,3 +97,12 @@ key를 기준으로 정렬하는 방법과 value를 기준으로 정렬하는 �
   Collections.sort(mapToList, (key1, key2) -> map.get(key1).compareTo(map.get(key2))); // 오름차순
   Collections.sort(mapToList, (key1, key2) -> map.get(key2).compareTo(map.get(key1))); // 내림차순
 ```
+
+<hr>
+
+## Sort() 주의사항
+
+1. **Null 처리**: 정렬 시 null 값이 포함된 경우 NullPointerException 발생 가능
+2. **불변 객체**: 정렬 중인 컬렉션 수정 시 ConcurrentModificationException 발생 가능
+3. **성능 고려**: 대용량 데이터의 경우 parallelSort() 사용 검토
+4. **안정성**: Collections.sort()는 안정 정렬, Arrays.sort()는 기본 타입의 경우 불안정 정렬
