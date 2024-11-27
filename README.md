@@ -4,7 +4,7 @@
 ## JavaScript
 + 핵심 개념
 	+ [프로토타입](javascript/프로토타입.md)
-	+ 클로저
+	+ [클로저](javascript/클로저.md)
 	+ 이벤트 루프
 	+ 비동기 프로그래밍
 + DOM 조작
