@@ -40,10 +40,12 @@
 	+ [Vue 라이프 사이클 속성](vue/vue-라이프-사이클-속성.md)
 		+ [라이프사이클 훅 실무적 관점](vue/라이프사이클-훅-실무적-관점.md)
   	+ 반응성(Reactivity) 시스템
-		+ ref vs reactive
-		+ computed vs watch
-		+ watchEffect
-		+ 반응성 함정과 해결방법
+  		+ nextTick
+  		+ computed vs watch 
+  		+ Vue3
+  	 		+ ref vs reactive
+  	   		+ watchEffect  
+		+ [반응성 함정과 해결방법](vue/반응성-함정과-해결방법.md)
 + 실무 최적화
 	+ [팝업에서의 데이터 전송(실무적 관점)](vue/팝업에서의-데이터-전송.md)
 	+ [컴포넌트의 효율적 관리](vue/컴포넌트의-효율적-관리.md)
