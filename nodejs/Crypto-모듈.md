@@ -45,7 +45,8 @@ const algorithm = 'aes-256-cbc'; //AES-256-CBC 알고리즘
 const key = crypto.randomBytes(32); // 256-bit key
 const iv = crypto.randomBytes(16); // 128-bit IV
 ```
-키와 IV는 독립적으로 사용되지만, 동일 키와 IV로 암호화 복호화를 진행해 주어야 한다.
+키와 IV는 독립적으로 사용되지만, 동일 키와 IV로 암호화 복호화를 진행해 주어야 한다. <br>
+실제 코드에서는 환경변수로 관리하고 있다.
 
 3. 우선 .env파일 내 DB_PASSWORD를 암호화 하기 위해, 메서드를 만들어 준다. 그 후 암호화를 진행한다.
 ```js
