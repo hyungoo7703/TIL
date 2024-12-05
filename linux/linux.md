@@ -124,6 +124,49 @@ head -n 10 file.txt //처음 10줄 보기
 
 ## 네트워크 관련
 
+### 1. ping: 네트워크 연결성을 테스트
+```
+ping google.com    # Google 서버로 ping 테스트
+ping -c 4 8.8.8.8  # 4번 ping 테스트 수행
+```
+
+### 2. nslookup: 도메인 이름을 IP 주소로 변환하거나 그 반대로 조회
+```
+nslookup google.com    # Google.com의 IP 주소 조회
+```
+
+### 3. netstat: 시스템의 네트워크 상태를 모니터링하고 분석하는 핵심 도구
+네트워크 연결, 라우팅 테이블, 인터페이스 통계 등을 표시한다.
+```
+# 가장 자주 사용되는 조합
+netstat -tulnp    # TCP/UDP 리스닝 포트와 프로그램 정보 표시
+netstat -an       # 모든 연결을 숫자로 표시
+netstat -nat      # TCP 연결을 숫자로 표시
+```
+
+> #### TCP (Transmission Control Protocol)
+연결형 서비스로 1:1 통신이며 전송 순서는 보장된다. 신뢰성은 높으나 상대적으로 느리다. (ex 파일 전송, 이메일 전송)
+
+> #### UDP (User Datagram Protocol)
+비연결형 서비스로 1:1, 1:N, N:N 통신이며 전송 순서는 바뀔 수 있다. 속도가 빠르나 신뢰성이 낮다. (ex 실시간 스트리밍, 화상 회의)
+
+> #### netstat 고급활용
+1. 보안 모니터링
+```
+# 의심스러운 연결 확인
+netstat -nat | grep ':80' | grep ESTABLISHED
+# 특정 포트의 연결 상태 모니터링
+netstat -an | grep LISTEN
+```
+
+2. 실시간 모니터링
+```
+# 1초마다 네트워크 상태 업데이트
+netstat -c
+# 인터페이스 통계 실시간 모니터링
+netstat -ic
+```
+
 ## 권한 관리
 디렉토리 내용 나열 명령어를 이용하면(예: ls -al), 파일과 디렉토리의 권한을 확인할 수 있다.
 
