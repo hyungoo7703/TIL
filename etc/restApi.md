@@ -8,10 +8,14 @@ REST API는 소프트웨어 아키텍처의 한 형식으로 자원을 이름으
 
 ## REST API 구성
 
-+ 자원(Resource) 
++ 자원(Resource)
+  + URI를 통해 자원을 명시
+  + 모든 자원에 고유한 ID 존재
 + 행위(Verb) - HTTP METHOD: GET, POST, PUT, PATCH, DELETE
 + 표현(Representations)
-
+  + JSON, XML, TEXT 등 다양한 형태로 표현
+  + 자원의 현재 상태를 표현
+ 
 위 구성 요소를 통해 상태 전달 - 데이터가 요청되는 시점의 자원의 상태 (ex JSON)
 
 ## REST에 적용되는 제한 조건, 특징
