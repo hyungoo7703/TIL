@@ -24,7 +24,7 @@
 ## TypeScript
 + 기초
 	+ [JavaScript와의 차이점](typescript/javascript와의-차이점.md)
- 	+ 타입 시스템
+ 	+ [타입 시스템](typescript/타입-시스템.md)
 + 고급 기능
 	+ [Narrowing](typescript/Narrowing.md)
 		+ [Truthiness narrowing](typescript/truthiness-narrowing.md)
