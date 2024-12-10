@@ -157,6 +157,9 @@
 	+ [과목1](qualifications/sqld/subject1.md)
  	+ [과목2](qualifications/sqld/subject2.md)
 + 리눅스마스터 2급
+	+ 리눅스 일반
+	+ [리눅스 운영 및 관리](qualifications/linuxm2/리눅스-운영-및-관리.md)
+ 	+ [리눅스 활용](qualifications/linuxm2/리눅스-활용.md)
 + 정보처리기사
 
 ## ETC
