@@ -20,6 +20,13 @@
 	+ Promise/async-await
 	+ ES6+ 신규 기능
 	+ 모듈 시스템
++ 데이터 처리관점에서의 JavaScript
+ 	+ TypedArray와 ArrayBuffer
+		+ WebGL, WebAssembly와의 연동
+	+ Web Workers
++ 데이터 시각화
+	+ Canvas API 심화
+	+ WebGL
 
 ## TypeScript
 + 기초
