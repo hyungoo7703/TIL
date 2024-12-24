@@ -52,6 +52,7 @@ list.add(1, "값2"); // 인덱스 지정 추가
 String value = list.get(0);
 ```
 
+### LinkedList 기본 사용
 ```java
 // 선언
 LinkedList<String> list = new LinkedList<>();
