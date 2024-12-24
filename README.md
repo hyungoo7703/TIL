@@ -83,7 +83,8 @@
 	+ [정규표현식(Regular Expression)](java/java/patternMatching.md) 
  	+ 컬렉션 프레임워크 
 		+ [sort()](java/java/sort().md)
-  		+ [WeakHashMap](java/java/WeakHashMap.md)  
+  		+ [List(ArrayList vs LinkedList)](java/java/list.md) 
+  		+ [WeakHashMap](java/java/WeakHashMap.md)
   		+ HashMap vs ConcurrentHashMap
  	+ 자료구조 & 알고리즘
 	  	+ 자료구조
