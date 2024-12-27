@@ -93,11 +93,23 @@
    			+ Tree 구조
 			+ Hash 구조
 		+ 알고리즘
-			+ [정렬](csKnowledge/algorithm/sorting.md)
+			+ [정렬](csKnowledge/algorithm/sorting.md) 
 			+ [완전탐색](csKnowledge/algorithm/brute-force-search.md)
 				+ [비트마스크](csKnowledge/algorithm/bruteForceSearch/bitmask.md)
 				+ 재귀함수
-					+ [순열, 조합](csKnowledge/algorithm/bruteForceSearch/recursiveFunction/permutaion%26combination.md) 
+					+ [순열, 조합](csKnowledge/algorithm/bruteForceSearch/recursiveFunction/permutaion%26combination.md)
+     			+ BFS/DFS 
+     			+ 그리디 알고리즘
+				+ 최적의 해를 구하는 알고리즘
+				+ Knapsack, 작업 스케줄링 문제에 활용
+			+ 동적 프로그래밍
+				+ LCS(Longest Common Subsequence)
+				+ 0/1 Knapsack
+				+ 편집 거리(Edit Distance) 
+     			+ 트리 알고리즘
+        			+ 최소 공통 조상(LCA)
+           			+ 트리 순회(전위, 중위, 후위)
+        			+ 이진 탐색 트리 검증 
 + Java 버전별 특징
 	+ Java 8
 		+ [람다 표현식](java/java8/람다-표현식.md)
