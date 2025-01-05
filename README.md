@@ -51,7 +51,7 @@
   		+ computed vs watch 
   		+ Vue3
   	 		+ ref vs reactive
-  	   		+ watchEffect  
+  	   		+ [watchEffect](vue/vue3/watchEffect.md)
 		+ [반응성 함정과 해결방법](vue/반응성-함정과-해결방법.md)
 + 실무 최적화
 	+ [팝업에서의 데이터 전송(실무적 관점)](vue/팝업에서의-데이터-전송.md)
