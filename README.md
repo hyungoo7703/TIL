@@ -47,8 +47,8 @@
 	+ [Vue 라이프 사이클 속성](vue/vue-라이프-사이클-속성.md)
 		+ [라이프사이클 훅 실무적 관점](vue/라이프사이클-훅-실무적-관점.md)
   	+ 반응성(Reactivity) 시스템
-  		+ nextTick
-  		+ computed vs watch 
+  		+ [nextTick](vue/nextTick.md)
+  		+ [computed vs watch](vue/computedVSwatch.md)
   		+ Vue3
   	 		+ [ref vs reactive](vue/vue3/refVSreactive.md)
   	   		+ [watchEffect](vue/vue3/watchEffect.md)
