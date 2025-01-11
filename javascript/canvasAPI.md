@@ -23,11 +23,66 @@
 Canvas API는 최근까지도 데이터 시각화에 활발하게 이용되기에 학습의 필요성이 있다고 판단했다. <br>
 실제로 코드를 작성을 진행하고, 정리를 진행할 예정
 
-### Canvas API 시각화 example
-> #### 프로젝트 기술 선택
+### Canvas API 시각화 처리
+
+> #### 차트로 처리
++ 실시간 데이터 업데이트와 애니메이션 구현이 용이
+```js
+function drawChart() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    
+    const chartWidth = canvas.width - (CHART_CONFIG.startX + CHART_CONFIG.rightMargin);
+    const chartHeight = canvas.height - (CHART_CONFIG.startY + CHART_CONFIG.bottomMargin);
+    
+    // 축 그리기를 먼저 수행
+    drawAxes();
+    
+    chartState.data.forEach((value, index) => {
+        const x = CHART_CONFIG.startX + (CHART_CONFIG.barWidth + CHART_CONFIG.spacing) * index;
+        const height = (value / Math.max(...chartState.data)) * chartHeight;
+        const y = canvas.height - CHART_CONFIG.bottomMargin - height;
+        
+        // 막대 그리기
+        ctx.fillStyle = '#4CAF50';
+        ctx.fillRect(x, y, CHART_CONFIG.barWidth, height);
+        
+        // 값 표시
+        ctx.fillStyle = '#000';
+        ctx.font = '14px Arial';
+        ctx.textAlign = 'center';
+        ctx.fillText(value, x + CHART_CONFIG.barWidth/2, y - 10);
+        
+        // x축 레이블
+        ctx.fillText(index + 1, x + CHART_CONFIG.barWidth/2, canvas.height - CHART_CONFIG.bottomMargin + 20);
+    });
+}
+```
 
 > #### 실시간 데이터 처리
 + 실시간 정보를 동적으로 표현
 + setInterval이나 requestAnimationFrame을 사용하여 지속적인 데이터 업데이트
+```js
+function startAutoUpdate() {
+    function update() {
+        if (chartState.isAutoUpdating) {
+            // 랜덤하게 하나의 데이터 업데이트
+            const randomIndex = Math.floor(Math.random() * chartState.data.length);
+            chartState.data[randomIndex] = Math.floor(Math.random() * 100);
+            drawChart();
+            requestAnimationFrame(update);
+        }
+    }
+    requestAnimationFrame(update);
+}
+```
+
+> #### requestAnimationFrame
+requestAnimationFrame(rAF)은 브라우저에서 애니메이션을 최적화하여 구현할 수 있게 해주는 Web API
+
+작동방식
++ 브라우저의 리페인트(repaint) 주기에 맞춰 애니메이션을 실행
++ 일반적으로 1초에 60프레임(60fps)으로 동작
++ 모니터의 주사율에 맞춰 자동으로 최적화
+
 
 
