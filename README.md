@@ -25,7 +25,7 @@
 		+ WebGL, WebAssembly와의 연동
 	+ Web Workers
 + 데이터 시각화
-	+ Canvas API 심화
+	+ [Canvas API 심화](javascript/canvasAPI.md)
 	+ WebGL
 
 ## TypeScript
