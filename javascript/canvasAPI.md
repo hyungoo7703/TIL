@@ -19,7 +19,7 @@
 + 마우스와 터치 이벤트를 직접 처리할 수 있어 다양한 인터랙션 구현이 가능
 + 실시간으로 그래픽을 수정하고 업데이트할 수 있어 동적인 데이터 시각화에 적합 <br>
 
-> #### 프로젝트를 간단히 진행 ☞ [canvas-api-example 리포지토리](https:1//github.com/hyungoo7703/canvas-api-example)
+> #### 프로젝트를 간단히 진행 ☞ [canvas-api-example 리포지토리](https://github.com/hyungoo7703/canvas-api-example)
 Canvas API는 최근까지도 데이터 시각화에 활발하게 이용되기에 학습의 필요성이 있다고 판단했다. <br>
 실제로 코드를 작성을 진행하고, 정리를 진행할 예정
 
