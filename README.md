@@ -174,8 +174,8 @@
 + [SSL](etc/ssl.md)
 + [프로토콜](etc/프로토콜.md)
 + HTTP 상태 코드
-+ [REST API](etc/restApi.md)
-	+ URI 설계 규칙 
++ [REST API](etc/rest/rest-API.md)
+	+ [URI 설계 규칙](etc/rest/URI-설계-규칙.md) 
 + [윈도우 포트 종료하는 방법](etc/윈도우-포트-종료하는-방법.md)
 
 ## ERROR
