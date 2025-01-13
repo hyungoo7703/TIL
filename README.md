@@ -173,9 +173,12 @@
 ## ETC
 + [SSL](etc/ssl.md)
 + [프로토콜](etc/프로토콜.md)
-+ HTTP 상태 코드
++ [HTTP 상태 코드](etc/HTTP-상태-코드.md)
 + [REST API](etc/rest/rest-API.md)
-	+ [URI 설계 규칙](etc/rest/URI-설계-규칙.md) 
+	+ [URI 설계 규칙](etc/rest/URI-설계-규칙.md)
++ 캐싱
+	+ 웹 캐시
+	+ CDN
 + [윈도우 포트 종료하는 방법](etc/윈도우-포트-종료하는-방법.md)
 
 ## ERROR
