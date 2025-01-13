@@ -37,3 +37,8 @@ HTTP 상태 코드는 서버가 클라이언트의 요청을 처리한 결과를
     + 500 (Internal Server Error) - 서버 내부 오류
     + 502 (Bad Gateway) - 게이트웨이 오류
     + 503 (Service Unavailable) - 서비스 이용 불가
+
+## 실무 주의사항
++ 잘못된 상태 코드 사용 (예: 에러 상황에서 200 OK 반환)
++ URI에 동사 사용 (GET /getUsers 대신 GET /users 사용)
++ 일관성 없는 응답 구조
