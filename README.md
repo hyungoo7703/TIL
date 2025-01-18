@@ -103,7 +103,7 @@
 	+ Java 8
 		+ [람다 표현식](java/java8/람다-표현식.md)
 		+ [스트림 API](java/java8/스트림-API.md)
-  		+ [날짜와 시간 API](java/java8/날짜와-시간-클래스.md)
+  		+ [날짜와 시간 클래스](java/java8/날짜와-시간-클래스.md)
   		+ [Optional](java/java8/optional.md)
 	+ Java 11
 		+ [새롭게 추가된 메서드](java/java11/새롭게-추가된-메서드.md)
