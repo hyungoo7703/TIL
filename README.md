@@ -176,7 +176,7 @@
 + [HTTP 상태 코드](etc/HTTP-상태-코드.md)
 + [REST API](etc/rest/rest-API.md)
 	+ [URI 설계 규칙](etc/rest/URI-설계-규칙.md)
-+ 캐싱
++ [캐싱](etc/caching/caching.md)
 	+ 웹 캐시
 	+ CDN
 + [윈도우 포트 종료하는 방법](etc/윈도우-포트-종료하는-방법.md)
