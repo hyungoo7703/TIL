@@ -59,6 +59,10 @@
 	+ 상태 관리(Vuex/Pinia)
 	+ 성능 최적화
 
+## React
+
+## Next.js
+
 ## Node.js
 + [Crypto 모듈](nodejs/Crypto-모듈.md)
 
@@ -99,6 +103,8 @@
 				+ [비트마스크](csKnowledge/algorithm/bruteForceSearch/bitmask.md)
 				+ 재귀함수
 					+ [순열, 조합](csKnowledge/algorithm/bruteForceSearch/recursiveFunction/permutaion%26combination.md)
+			+ Greedy Algorithm
+			+ dynamic programming(동적계획법)
 + Java 버전별 특징
 	+ Java 8
 		+ [람다 표현식](java/java8/람다-표현식.md)
