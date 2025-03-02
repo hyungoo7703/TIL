@@ -1,4 +1,5 @@
-# querySelector, querySelectorAll
+# querySelector 선택자 
+> #### querySelector, querySelectorAll
 
 CSS선택자를 사용하여 HTML의 요소를 찾을 때 <br>
 JavaScript의 querySelector(), querySelectorAll() 메소드를 이용하여 찾을 수 있다. 

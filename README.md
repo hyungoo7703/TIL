@@ -3,23 +3,23 @@
 
 ## JavaScript
 + 핵심 개념
-	+ [프로토타입](javascript/프로토타입.md)
-	+ [클로저](javascript/클로저.md)
-	+ [비동기 프로그래밍](javascript/비동기-프로그래밍.md)
-	+ [이벤트 루프](javascript/이벤트-루프.md)
-+ DOM 조작
-	+ [querySelector(All)()](javascript/querySelector(All).md)
- 	+ 이벤트 핸들링 
-+ 기본 내장함수
+	+ [비동기 프로그래밍](javascript/core/async-programming.md)
+	+ [클로저](javascript/core/closure.md)
+	+ [이벤트 루프](javascript/core/event-loop.md)
+	+ [호이스팅](javascript/core/hoisting.md)
+	+ [프로토타입](javascript/core/prototype.md)
+	+ [this 바인딩](javascript/core/this-binding.md)
++ DOM 관련
+	+ [이벤트 핸들링](javascript/dom/event-handling.md)
+	+ [DOM 조작 메서드](javascript/dom/manipulation.md)
+	+ [querySelector 선택자](javascript/dom/querySelector.md)
++ 내장 객체와 메서드
 	+ [객체(Object) 내장함수](javascript/객체-내장함수.md)
   	+ [문자열(String) 내장함수](javascript/문자열-내장함수.md)
-	+ [배열 내장함수](javascript/배열-내장함수.md)
+	+ 배열 관련
+		+ [기본 배열 메서드](javascript/array/배열-내장함수.md)
 		+ [reduce](javascript/array/reduce.md)
 	+ [기타 유용한 내장함수](javascript/기타-유용한-내장함수.md)
-+ 최신 JavaScript
-	+ Promise/async-await
-	+ ES6+ 신규 기능
-	+ 모듈 시스템
 + 데이터 처리관점에서의 JavaScript
  	+ TypedArray와 ArrayBuffer
 		+ WebGL, WebAssembly와의 연동
