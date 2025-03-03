@@ -14,19 +14,21 @@
 	+ [DOM 조작 메서드](javascript/dom/manipulation.md)
 	+ [querySelector 선택자](javascript/dom/querySelector.md)
 + 내장 객체와 메서드
-	+ [객체(Object) 내장함수](javascript/객체-내장함수.md)
-  	+ [문자열(String) 내장함수](javascript/문자열-내장함수.md)
+	+ [객체(Object) 내장함수](javascript/built-ins/객체-내장함수.md)
+  	+ [문자열(String) 내장함수](javascript/built-ins/문자열-내장함수.md)
 	+ 배열 관련
-		+ [기본 배열 메서드](javascript/array/배열-내장함수.md)
-		+ [reduce](javascript/array/reduce.md)
-	+ [기타 유용한 내장함수](javascript/기타-유용한-내장함수.md)
+		+ [기본 배열 메서드](javascript/built-ins/array/배열-내장함수.md)
+		+ [reduce](javascript/built-ins/array/reduce.md)
+	+ [기타 유용한 내장함수](javascript/built-ins/기타-유용한-내장함수.md)
++ 데이터 시각화
+	+ [Canvas API 심화](javascript/visualization/canvas.md)
+	+ WebGL
 + 데이터 처리관점에서의 JavaScript
  	+ TypedArray와 ArrayBuffer
-		+ WebGL, WebAssembly와의 연동
 	+ Web Workers
-+ 데이터 시각화
-	+ [Canvas API 심화](javascript/canvasAPI.md)
-	+ WebGL
+	+ 다른 기술과의 연동
+		+ WebAssembly 연동
+		+ WebGL 연동
 
 ## TypeScript
 + 기초
