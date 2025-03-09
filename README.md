@@ -32,15 +32,17 @@
 
 ## TypeScript
 + 기초
-	+ [JavaScript와의 차이점](typescript/javascript와의-차이점.md)
- 	+ [타입 시스템](typescript/타입-시스템.md)
+	+ [JavaScript와의 차이점](typescript/basic/differences-from-javascript.md)
+	+ 인터페이스와 타입 별칭
+ 	+ [타입 시스템](typescript/basic/type-system.md)
 + 고급 기능
-	+ [Narrowing](typescript/Narrowing.md)
-		+ [Truthiness narrowing](typescript/truthiness-narrowing.md)
+	+ [Narrowing](typescript/advanced/narrowing.md)
+		+ [Truthiness narrowing](typescript/advanced/narrowing/truthiness-narrowing.md)
+		+ 타입 가드
 	+ 제네릭
 	+ 유틸리티 타입
 + 실무 활용
-	+ [컴파일러 옵션](typescript/컴파일러-옵션.md)
+	+ [컴파일러 옵션](typescript/for-use/compiler-option.md)
 	+ 타입 선언 파일
 
 ## Vue
