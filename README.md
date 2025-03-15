@@ -194,15 +194,15 @@
 + 정보처리기사
 
 ## ETC
-+ [SSL](etc/ssl.md)
-+ [프로토콜](etc/프로토콜.md)
-+ [HTTP 상태 코드](etc/HTTP-상태-코드.md)
-+ [REST API](etc/rest/rest-API.md)
-	+ [URI 설계 규칙](etc/rest/URI-설계-규칙.md)
 + [캐싱](etc/caching/caching.md)
 	+ 웹 캐시
 	+ CDN
-+ [윈도우 포트 종료하는 방법](etc/윈도우-포트-종료하는-방법.md)
++ [REST API](etc/rest/rest-API.md)
+	+ [URI 설계 규칙](etc/rest/URI-design-rules.md)
++ [윈도우 포트 종료하는 방법](etc/closing-windows-ports.md)
++ [HTTP 상태 코드](etc/HTTP-status-codes.md)
++ [프로토콜](etc/protocol.md)
++ [SSL](etc/ssl.md)
 
 ## ERROR
 + [쿼리 안티패턴 문제](error/쿼리-안티패턴-문제.md)
