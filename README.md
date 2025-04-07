@@ -29,6 +29,9 @@
 	+ 다른 기술과의 연동
 		+ WebAssembly 연동
 		+ WebGL 연동
+ 
+## JavaScript(algorithm)
+> #### 정리 및 학습리포지토리 ☞ [algorithm-js](https://github.com/hyungoo7703/algorithm-js)
 
 ## TypeScript
 + 기초
