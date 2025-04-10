@@ -198,8 +198,7 @@
 
 ## ETC
 + [캐싱](etc/caching/caching.md)
-	+ 웹 캐시
-	+ CDN
+	+ [웹 캐싱](etc/caching/web-caching.md)
 + [REST API](etc/rest/rest-API.md)
 	+ [URI 설계 규칙](etc/rest/URI-design-rules.md)
 + [윈도우 포트 종료하는 방법](etc/closing-windows-ports.md)
