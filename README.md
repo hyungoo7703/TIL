@@ -22,13 +22,6 @@
 	+ [기타 유용한 내장함수](javascript/built-ins/others.md)
 + 데이터 시각화
 	+ [Canvas API 심화](javascript/visualization/canvas.md)
-	+ WebGL
-+ 데이터 처리관점에서의 JavaScript
- 	+ TypedArray와 ArrayBuffer
-	+ Web Workers
-	+ 다른 기술과의 연동
-		+ WebAssembly 연동
-		+ WebGL 연동
  
 ## JavaScript(algorithm)
 > #### 정리 및 학습리포지토리 ☞ [algorithm-js](https://github.com/hyungoo7703/algorithm-js)
