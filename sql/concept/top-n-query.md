@@ -3,7 +3,8 @@ Top N 쿼리는 데이터베이스에서 상위 N개의 행을 조회하는 쿼�
 각 데이터베이스 시스템별로 구현 방식이 다르다.
 
 ## Oracle
-☞ ROWNUM 사용 (12c 이전)
+
+> #### ROWNUM 사용 (12c 이전)
 ```SQL
 -- 단순 조회
 SELECT * FROM employees 
@@ -16,7 +17,7 @@ SELECT * FROM (
 ) WHERE ROWNUM <= 5;
 ```
 
-☞ FETCH FIRST 사용 (12c 이후)
+> #### FETCH FIRST 사용 (12c 이후)
 ```SQL
 SELECT * FROM employees 
 ORDER BY salary DESC
@@ -27,7 +28,8 @@ FETCH FIRST 5 ROWS WITH TIES;
 ```
 
 ## SQL Server
-☞ TOP 절 사용
+
+> #### TOP 절 사용
 ```SQL
 -- 단순 상위 N개
 SELECT TOP 5 * FROM employees;
@@ -42,7 +44,8 @@ ORDER BY salary DESC;
 ```
 
 ## MySQL
-☞ LIMIT 사용
+
+> #### LIMIT 사용
 ```SQL
 -- 상위 N개
 SELECT * FROM employees 
