@@ -1,9 +1,8 @@
 # 윈도우 함수
-윈도우 함수는 행과 행 간의 관계를 쉽게 정의하고 계산하기 위한 함수
+윈도우 함수는 SQL에서 행과 행 간의 관계를 정의하고 계산하기 위해 사용되는 함수이다. <br>
+그룹화된 데이터에서도 각 행의 세부 정보를 유지하며 다양한 분석 작업을 수행하기 위해 사용한다.
 
-<hr>
-
-### 윈도우 함수의 주요 특징
+## 윈도우 함수의 주요 특징
 
 #### 행 단위 처리
 → 집계함수는 그룹당 하나의 결과만 반환하지만, 윈도우 함수는 모든 행이 유지되며 각 행마다 결과 반환한다. <br>
@@ -12,12 +11,12 @@
 #### GROUP BY와의 차이
 → GROUP BY는 행을 그룹화하여 집약(축소)하지만, 윈도우 함수는 행 수가 줄어들지 않는다.
 
-### 윈도우 함수의 장점
+## 윈도우 함수의 장점
 1. 복잡한 행간 계산을 단순화
 2. 서브쿼리 없이 데이터 분석 가능
 3. 성능 최적화된 데이터 처리
 
-### 기본 문법
+## 기본 문법 및 실제 예시
 ```SQL
 함수(컬럼) OVER (
     PARTITION BY 그룹화할_컬럼
@@ -25,18 +24,22 @@
     ROWS BETWEEN 시작행 AND 끝행
 )
 ```
++ PARTITION BY: 데이터를 소그룹으로 나눔
++ ORDER BY: 소그룹 내 정렬 기준 설정
++ ROWS BETWEEN: 처리할 행 범위 지정
 
-### 실제 예시1
+> #### 실제 예시1
 [상황] <br>
 부서별 급여 순위 계산
 ```SQL
-SELECT 
+SELECT
     employee_name,
     department,
     salary,
     RANK() OVER (PARTITION BY department ORDER BY salary DESC) as salary_rank
 FROM employees;
 ```
+
 [결과 예시]
 ```SQL
 employee_name | department | salary | salary_rank
@@ -47,7 +50,7 @@ employee_name | department | salary | salary_rank
 최동욱        | 개발부      | 5000   | 2
 ```
 
-### 실제 예시2
+> #### 실제 예시2
 [상황] <br>
 누적 합계 계산
 ```SQL
@@ -57,6 +60,7 @@ SELECT
     SUM(amount) OVER (ORDER BY sale_date) as running_total
 FROM sales;
 ```
+
 [결과 예시]
 ```SQL
 sale_date  | amount | running_total
