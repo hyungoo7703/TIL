@@ -163,9 +163,9 @@
 
 ## SQL
 + SQL 개념
-	+ [윈도우 함수](sql/윈도우-함수.md)
-	+ [TOP N 쿼리](sql/TOP-N-쿼리.md)
-   	+ 서브쿼리vs조인 
+   	+ [서브쿼리vs조인](sql/concept/subqueries-vs-joins.md)
+	+ [TOP N 쿼리](sql/concept/top-n-query.md)
+	+ [윈도우 함수](sql/concept/window-function.md)
 + 실행 계획
 	+ 실행 계획 읽는 방법
 	+ DBMS별 실행 계획 차이점
