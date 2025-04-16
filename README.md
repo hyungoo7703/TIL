@@ -181,12 +181,13 @@
 + [Linux 명령어 정리](linux/linux.md)
 	
 ## 자격증
-+ SQL[개발자]
++ **SQLD(SQL 개발자)** ☞ 24.12.13 합격
 	+ [과목1](qualifications/sqld/subject1.md)
  	+ [과목2](qualifications/sqld/subject2.md)
-+ 리눅스마스터 2급
-	+ [리눅스 운영 및 관리](qualifications/linuxm2/리눅스-운영-및-관리.md)
- 	+ [리눅스 활용](qualifications/linuxm2/리눅스-활용.md)
++ **리눅스마스터 2급** ☞ 25.01.03 합격
+	+ [과목2: 리눅스 운영 및 관리](qualifications/linuxm2/subject2.md)
+ 	+ [과목3: 리눅스 활용](qualifications/linuxm2/subject3.md)
++ ADsP(데이터분석 준전문가)
 + 정보처리기사
 
 ## ETC
@@ -201,9 +202,5 @@
 + [SSL](etc/ssl.md)
 
 ## ERROR
-+ [쿼리 안티패턴 문제](error/쿼리-안티패턴-문제.md)
-+ [node_modules 설치오류](error/node_modules-설치오류.md)
-+ [@GeneratedValue 관련 주의사항(JPA)](error/@GeneratedValue-관련-주의사항.md)
-+ 커넥션 풀 관련 이슈
-+ OOM(Out Of Memory) 문제 해결
-+ 동시성 문제 해결
++ [@GeneratedValue 관련 주의사항(JPA)](error/@GeneratedValue-caution.md)
++ [node_modules 설치오류](error/node_modules-installation-error.md)
