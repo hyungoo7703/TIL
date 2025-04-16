@@ -24,7 +24,7 @@
 	+ [Canvas API 심화](javascript/visualization/canvas.md)
  
 ## JavaScript(algorithm)
-> #### 정리 및 학습리포지토리 ☞ [algorithm-js](https://github.com/hyungoo7703/algorithm-js)
+📌 **정리 및 학습리포지토리** ☞ [algorithm-js](https://github.com/hyungoo7703/algorithm-js)
 
 ## TypeScript
 + **기초**
