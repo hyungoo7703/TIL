@@ -1,7 +1,7 @@
-# TIL (Today I Learned)
+# 🚀 TIL (Today I Learned)
 모든 내용을 다 정리 할 수 없으니, 내가 잘 사용 할 수 있도록 이해 및 정리
 
-## JavaScript
+## 📌 JavaScript
 + **핵심 개념**
 	+ [비동기 프로그래밍](javascript/core/async-programming.md)
 	+ [클로저](javascript/core/closure.md)
@@ -23,10 +23,10 @@
 + **데이터 시각화**
 	+ [Canvas API 심화](javascript/visualization/canvas.md)
  
-## JavaScript(algorithm)
-📌 **정리 및 학습리포지토리** ☞ [algorithm-js](https://github.com/hyungoo7703/algorithm-js)
+## 📌 JavaScript(algorithm)
+**정리 및 학습리포지토리** ☞ [algorithm-js](https://github.com/hyungoo7703/algorithm-js)
 
-## TypeScript
+## 📌 TypeScript
 + **기초**
 	+ [JavaScript와의 차이점](typescript/basic/differences-from-javascript.md)
 	+ 인터페이스와 타입 별칭
@@ -41,7 +41,7 @@
 	+ [컴파일러 옵션](typescript/for-use/compiler-option.md)
 	+ 타입 선언 파일
 
-## Vue
+## 📌 Vue
 + **기본 구성**
 	+ [Vue 프로젝트 생성 및 구조](vue/vue-프로젝트-생성-및-구조.md)
 	+ [Vue 라이프 사이클 속성](vue/vue-라이프-사이클-속성.md)
@@ -59,15 +59,15 @@
 	+ 상태 관리(Vuex/Pinia)
 	+ 성능 최적화
 
-## React
+## 📌 React
 
-## Next.js
+## 📌 Next.js
 + [Next.js 프레임워크란?](next/next-js-프레임워크란.md)
 
-## Node.js
+## 📌 Node.js
 + [Crypto 모듈](nodejs/Crypto-모듈.md)
 
-## Koa
+## 📌 Koa
 + [Koa 프레임워크란?](koa/koa-프레임워크란.md)
 + [미들웨어(middleware)](koa/middleware.md)
 + 라우팅
@@ -81,10 +81,8 @@
 	+ helmet
 	+ rate limiting
 
-## NestJS
-
-## Java
-+ Java
+## 📌 Java
++ **Java**
 	+ [Java에서 스레드(Thread)다루기](java/java/Java에서-Thread다루기.md)
  	+ [빌더 패턴 파헤치기](java/java/빌더-패턴.md)
 	+ [정규표현식(Regular Expression)](java/java/patternMatching.md) 
@@ -119,9 +117,9 @@
   	+ **Java 17**
   		+ [Record](java/java17/record.md)
 
-## Kotlin
+## 📌 Kotlin
 
-## Spring
+## 📌 Spring
 + **Spring Project**
 	+ [Spring Boot](spring/springBoot.md)
 	+ [Spring Data](spring/springData.md)
@@ -151,7 +149,7 @@
  	+ Logging 설정
 	+ Transaction 관리
 
-## SQL
+## 📌 SQL
 + **SQL 개념**
    	+ [서브쿼리vs조인](sql/concept/subqueries-vs-joins.md)
 	+ [TOP N 쿼리](sql/concept/top-n-query.md)
@@ -162,13 +160,13 @@
 	+ 비용(Cost) 분석
 	+ 실행 계획 최적화 전략
 
-## Git
+## 📌 Git
 + [Git 명령어 정리](git/git.md)
 
-## Linux
+## 📌 Linux
 + [Linux 명령어 정리](linux/linux.md)
 	
-## 자격증
+## 📌 자격증
 + **SQLD(SQL 개발자)** ☞ 24.12.13 합격
 	+ [과목1](qualifications/sqld/subject1.md)
  	+ [과목2](qualifications/sqld/subject2.md)
@@ -178,7 +176,7 @@
 + **ADsP(데이터분석 준전문가)**
 + **정보처리기사**
 
-## ETC
+## 📌 ETC
 + [캐싱](etc/caching/caching.md)
 	+ [웹 캐싱](etc/caching/web-caching.md)
 + [REST API](etc/rest/rest-API.md)
@@ -189,6 +187,6 @@
 + [프로토콜](etc/protocol.md)
 + [SSL](etc/ssl.md)
 
-## ERROR
+## 📌 ERROR
 + [@GeneratedValue 관련 주의사항(JPA)](error/@GeneratedValue-caution.md)
 + [node_modules 설치오류](error/node_modules-installation-error.md)
