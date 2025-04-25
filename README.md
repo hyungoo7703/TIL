@@ -29,7 +29,7 @@
 ## 📌 TypeScript
 + **기초**
 	+ [JavaScript와의 차이점](typescript/basic/differences-from-javascript.md)
-	+ 인터페이스와 타입 별칭
+	+ [인터페이스와 타입 별칭](typescript/basic/interface-and-type-aliase.md)
  	+ [타입 시스템](typescript/basic/type-system.md)
 + **고급 기능**
 	+ [Narrowing](typescript/advanced/narrowing.md)
