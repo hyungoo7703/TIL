@@ -45,7 +45,7 @@ const userId: ID = 123456;
 
 ## Interface vs Type: 주요 차이점
 
-#### 1. 확장 방식
+> #### 1. 확장 방식
 **Interface** - extends 키워드로 확장
 ```ts
 interface Animal {
@@ -67,7 +67,7 @@ type Cat = Animal & {
 };
 ```
 
-#### 2. 선언 병합
+> #### 2. 선언 병합
 **Interface** - 동일한 이름으로 여러 번 선언하면 자동으로 병합
 ```ts
 interface User {
@@ -92,7 +92,7 @@ type User = {
 };
 ```
 
-#### 3. 적용 가능한 타입 범위
+> #### 3. 적용 가능한 타입 범위
 **Interface** - 주로 객체 구조 정의에 사용
 +  클래스 구현(implements)에 활용 가능
 +  객체 타입 정의에 최적화 
