@@ -175,6 +175,7 @@
  	+ [과목3: 리눅스 활용](qualifications/linuxm2/subject3.md)
 + **ADsP(데이터분석 준전문가)**
 + **정보처리기사**
+	+ [과목1~3 - 암기사항 정리](qualifications/eip/subject1~3.md)
 
 ## 📌 ETC
 + [캐싱](etc/caching/caching.md)
