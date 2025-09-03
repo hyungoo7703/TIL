@@ -83,37 +83,37 @@
 
 ## 📌 Java
 + **Java**
-	+ [Java에서 스레드(Thread)다루기](java/java/Java에서-Thread다루기.md)
- 	+ [빌더 패턴 파헤치기](java/java/빌더-패턴.md)
-	+ [정규표현식(Regular Expression)](java/java/patternMatching.md) 
+	+ [Java에서 스레드(Thread)다루기](java/java/java_thread_handling.md)
+ 	+ [빌더 패턴 파헤치기](java/java/builder_pattern.md)
+	+ [정규표현식(Regular Expression)](java/java/pattern_matching.md) 
  	+ **컬렉션 프레임워크** 
-		+ [sort()](java/java/sort().md)
+		+ [sort()](java/java/sort.md)
   		+ [List(ArrayList vs LinkedList)](java/java/list.md) 
-  		+ [WeakHashMap](java/java/WeakHashMap.md)
-  		+ [HashMap vs ConcurrentHashMap](java/java/HashMapVSConcurrentHashMap.md)
+  		+ [WeakHashMap](java/java/weak_hash_map.md)
+  		+ [HashMap vs ConcurrentHashMap](java/java/hash_map_vs_concurrent_hash_map.md)
  	+ **자료구조 & 알고리즘**
 	  	+ **자료구조**
-   			+ [배열](csKnowledge/dataStructure/배열.md) 
-			+ [스택 & 큐](csKnowledge/dataStructure/stack%26queue.md)
-   			+ Tree 구조
-			+ Hash 구조
+   			+ [배열](java/java/cs_knowledge/data_structure/array.md)
+			+ [스택 & 큐](java/java/cs_knowledge/data_structure/stack_and_queue.md)
+   			+ [Tree 구조](java/java/cs_knowledge/data_structure/tree_structure.md)
+			+ [Hash 구조](java/java/cs_knowledge/data_structure/hash_structure.md)
 		+ **기본 알고리즘**
-			+ [정렬](csKnowledge/algorithm/sorting.md)
+			+ [정렬](java/java/cs_knowledge/algorithm/sorting.md)
    			+ BFS/DFS 
-			+ [완전탐색](csKnowledge/algorithm/brute-force-search.md)
-				+ [비트마스크](csKnowledge/algorithm/bruteForceSearch/bitmask.md)
+			+ [완전탐색](java/java/cs_knowledge/algorithm/brute_force_search.md)
+				+ [비트마스크](java/java/cs_knowledge/algorithm/brute_force_search/bitmask.md)
 				+ 재귀함수
-					+ [순열, 조합](csKnowledge/algorithm/bruteForceSearch/recursiveFunction/permutaion%26combination.md)
+					+ [순열, 조합](java/java/cs_knowledge/algorithm/brute_force_search/recursive_function/permutation_and_combination.md)
 			+ Greedy Algorithm
 			+ dynamic programming(동적계획법)
 + **Java 버전별 특징**
 	+ **Java 8**
-		+ [람다 표현식](java/java8/람다-표현식.md)
-		+ [스트림 API](java/java8/스트림-API.md)
-  		+ [날짜와 시간 클래스](java/java8/날짜와-시간-클래스.md)
+		+ [람다 표현식](java/java8/lambda_expressions.md)
+		+ [스트림 API](java/java8/stream_api.md)
+  		+ [날짜와 시간 클래스](java/java8/date_time_classes.md)
   		+ [Optional](java/java8/optional.md)
 	+ **Java 11**
-		+ [새롭게 추가된 메서드](java/java11/새롭게-추가된-메서드.md)
+		+ [새롭게 추가된 메서드](java/java11/new_methods.md)
   	+ **Java 17**
   		+ [Record](java/java17/record.md)
 
